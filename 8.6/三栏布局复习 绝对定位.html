@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zn-ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    #a {
+        width: auto;
+        height: 100px;
+        background-color: crimson;
+    }
+
+    #b {
+        width: 100%;
+        height: 100px;
+        background-color: rebeccapurple;
+        position: absolute;
+        top: calc(100% - 100px);
+    }
+
+    #c {
+        width: 100px;
+        height: calc(100% - 200px);
+        background-color: red;
+        position: absolute;
+        top:100px;
+    }
+
+    #d {
+        width: 100px;
+        height: calc(100% - 200px);
+        background-color: blue;
+        position: absolute;
+        top:100px;
+        left:calc(100% - 100px);
+    }
+
+    #e {
+        width: calc(100% - 200px);
+        height: calc((100% - 200px) / 3); 
+        background-color: green;
+        position: absolute;
+        top:100px;
+        left:100px;
+    }
+
+    #f {
+        width: calc(100% - 200px);
+        height:calc((100% - 200px) / 3);
+        position: absolute;
+        top:calc(100px + (100% - 200px) / 3);
+        left:100px;
+        background-color: yellow;
+    }
+
+    #g {
+        width: calc(100% - 200px);
+        height: calc((100% - 200px) / 3);
+        position: absolute;
+        top:calc(100px + (100% - 200px) / 3 * 2);
+        left:100px;
+        background-color: orange;
+    }
+</style>
+
+<body>
+    <div id="a"></div>
+    <div id="b"></div>
+    <div id="c"></div>
+    <div id="d"></div>
+    <div id="e"></div>
+    <div id="f"></div>
+    <div id="g"></div>
+</body>
+
+</html>

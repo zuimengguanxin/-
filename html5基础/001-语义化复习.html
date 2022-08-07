@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>网站标题</header>
+    <nav>网站导航</nav>
+    <aside>网页导航</aside>
+    <main>网页主题</main>
+    <footer>网站底部</footer>
+    
+</body>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    html,body{
+        height: 100%;
+    }
+
+    header{
+        height: 80px;
+        background-color: rgb(95, 160, 42);
+    }
+    nav{
+        background-color: blue;
+        height: 80px;
+
+    }
+    aside{
+        height:calc(100% - 210px);
+        width: 20%;
+        background-color: rgb(223, 13, 13);
+        float: left;
+    }
+    main{
+        background-color: blanchedalmond;
+        width: 80%;
+        height:calc(100% - 210px);
+        float: right;
+        
+    }
+    footer{
+        clear: both;
+        background-color: blueviolet;
+        max-height: 100px;
+        min-height: 50px;
+    }
+</style>
+</html>

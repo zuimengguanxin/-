@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .box{
+        width: 300px;
+        margin: 0 auto;
+    }
+    ul{
+       list-style: none;
+    }
+    .box .item{
+        float: left;
+        width: 148px;
+        text-align: center;
+        border: 1px solid blue;
+        background: blue;
+        color: aliceblue;
+        line-height: 40px;
+
+    }
+    .item:hover{
+        background: lightblue;
+    }
+    .item:hover ul{
+        display: block;
+
+    }
+    .item ul{
+        display: none;
+        background: white;
+        color: black;
+    }
+    .item li:hover {
+        color: blue;
+    }
+
+</style>
+<body>
+    <ul class="box">
+        <li class="item">视频教程
+            <ul>
+                <li>111111111111</li>
+                <li>21111111111111</li>
+                <li>31111111111</li>
+                <li>41111111</li>
+                <li>511111111</li>
+            </ul>
+        </li>
+        <li class="item">认证考试
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

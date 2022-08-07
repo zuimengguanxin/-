@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div {
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+
+</style>
+
+<body>
+    <div><b>表单晋级 单选框</b></div>
+    <div>请输入你的姓名</div>
+    <div>
+        <form action="post">
+            <input type="text" name="name" id="name">
+            <input type="submit" value="提交">
+        </form>
+    </div>
+    
+    <div>你对京东的满意程度如何</div>
+    <div>
+        <input type="radio" name="a" checked id="manyi"> <label for="manyi"><span>   满意</span></label> <br>
+        <input type="radio" name="a"> <span>  不满意</span> <br>
+        <input type="radio" name="a"> <span> 很不满意</span> <br>
+        <input type="radio" name="a"> <span>超级不满意</span>
+    </div>
+    <div>你的性别</div>
+    <div>
+        <input type="radio" name="b" id="man" checked> <label for="man"><span>男</span></label> <br>
+        <input type="radio" name="b" id="woman"> <label for="woman"><span>女</span></label>
+    </div>
+    
+</body>
+
+</html>
