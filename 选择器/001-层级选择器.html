@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span{
+            color:red;
+        }
+        /* 子代选择器 > 只选子，不选孙 */
+        .box>li {
+            background-color: #ccc;
+            margin: 0 auto;
+            border: 1px solid #000;
+        }
+         /* 兄弟选择器  当前元素后第一个元素*/
+        .child+li {
+            background-color: #f00;
+        }
+         /* 兄弟选择器  当前元素后所有的亲兄弟*/
+        .child~li {
+            background-color: #0f0;
+            }
+    
+    </style>
+</head>
+
+<body>
+    <ul class="box">
+        <li>111
+            <ul>
+                <li>222</li>
+                <li>333</li>
+                <li>444</li>
+            </ul>
+        </li>
+        <li class="child">111</li>
+        <li>111 </li>
+        <li>111 </li>
+        <li>111 </li>
+        <div>
+            <li>12333</li>
+        </div>
+    </ul>
+</body>
+
+</html>
