@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>引用和术语定义</title>
+</head>
+
+<body>
+    <P>1.地址</P>
+    <address>
+        Written by <a href="mailto:webmaster@example.com">Donald Duck</a>.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+
+
+    <br>
+    <p>2.缩写和首字母缩写</p>
+    <abbr title="etcetera">etc.</abbr>
+    <br />
+    <acronym title="World Wide Web">WWW</acronym>
+    <p>在某些浏览器中，当您把鼠标移至缩略词语上时，title 可用于展示表达的完整版本。</p>
+    <p>仅对于 IE 5 中的 acronym 元素有效。</p>
+    <p>对于 Netscape 6.2 中的 abbr 和 acronym 元素都有效。</p>
+
+    <br>
+
+    <p>The <dfn title="World Health Organization">WHO</dfn> was founded in 1948.</p>
+
+    <p>对缩写进行标记能够为浏览器、翻译系统以及搜索引擎提供有用的信息。</p>
+    <br>
+
+    <p>
+        如果您的浏览器支持 bi-directional override (bdo)，下一行会从右向左输出 (rtl)；
+    </p>
+
+    <bdo dir="rtl">
+        Here is some Hebrew text
+    </bdo>
+    <br>
+
+    这是长的引用：
+    <blockquote>
+        这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。这是长的引用。
+    </blockquote>
+
+    这是短的引用：
+    <q>
+        这是短的引用。
+    </q>
+
+    <p>
+        使用 blockquote 元素的话，浏览器会插入换行和外边距，而 q 元素不会有任何特殊的呈现。
+    </p>
+    <br>
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+</body>
+
+</html>
