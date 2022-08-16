@@ -32,7 +32,7 @@
     <style>
     用于改变 HTML 元素的样式。
 ##### 4.格式化
-###### （1）文本格式化标签  [见4.格式化 001-文本格式化标签.html](html/格式化/001-文本格式化.html)
+###### （1）文本格式化标签  [见4.格式化 001-文本格式化标签.html](./%E7%A4%BA%E4%BE%8Bcode/html/格式化/001-文本格式化.html)
 
     <b>	定义粗体文本。
     <big>	定义大号字。
@@ -45,12 +45,12 @@
     <ins>	定义插入字。
     <del>	定义删除字。
 
-###### （2）预格式化标签[见4.格式化 002-预格式化标签.html](html/格式化/002-预格式化.html)
+###### （2）预格式化标签[见4.格式化 002-预格式化标签.html](./%E7%A4%BA%E4%BE%8Bcode/html/格式化/002-预格式化.html)
 
     <pre>	定义预格式化文本。
 
 
-###### （3）计算机输出标签[见4.格式化 003-计算机输出标签.html](html/格式化/003-计算机输出标签.html)
+###### （3）计算机输出标签[见4.格式化 003-计算机输出标签.html](./%E7%A4%BA%E4%BE%8Bcode/html/格式化/003-计算机输出标签.html)
 
     <code>	
     定义计算机代码。
@@ -65,7 +65,7 @@
     <pre>	
     定义预格式文本。
 
-###### （4）引用和术语定义[见格式化 004-引用和术语定义.html](html/格式化/004-引用和术语定义.html)
+###### （4）引用和术语定义[见格式化 004-引用和术语定义.html](./%E7%A4%BA%E4%BE%8Bcode/html/格式化/004-引用和术语定义.html)
     
     <abbr>	
     定义缩写。
@@ -85,7 +85,7 @@
     <dfn>	
     定义一个定义项目。缩写  ？？？？？？？
 
-##### 5.css引入[见css引入 001-css引入.html](html/css引入/001-css引入.html)
+##### 5.css引入[见css引入 001-css引入.html](./%E7%A4%BA%E4%BE%8Bcode/html/css引入/001-css引入.html)
 
      三种方式插入样式表：
 ###### （1）外联样式表：
@@ -118,7 +118,7 @@
 ###### （4）优先级：
     内联样式 > 内部样式表 > 外部样式表 
 
-##### 6.链接 [见链接 001-链接.html](html/链接/001-链接.html)
+##### 6.链接 [见链接 001-链接.html](./%E7%A4%BA%E4%BE%8Bcode/html/链接/001-链接.html)
 
 ###### （1） a标签定义链接语法。
      <a href="url" targer="_self">链接文本</a>
@@ -146,7 +146,7 @@
         <a href="#C4">查看 Chapter 4。</a>
         <h2><a name="C4">Chapter 4</a></h2>
         
-##### 7.图像 [见图像 001-图像.html](html/图像/001-图像.html)
+##### 7.图像 [见图像 001-图像.html](./%E7%A4%BA%E4%BE%8Bcode/html/图像/001-图像.html)
 
 ###### (1)img定义图像的语法是：
     <img src="url" />
@@ -177,7 +177,7 @@
         shape  值      图像的形状。rect矩 circle圆 poly多边形
         coords 值      图像的坐标。
         href   值      图像的链接。
-##### 8.表格 [见表格 001-表格.html](html/表格/001-表格.html)
+##### 8.表格 [见表格 001-表格.html](./%E7%A4%BA%E4%BE%8Bcode/html/表格/001-表格.html)
 ###### (1)table定义表格的语法是：
     <table>
         <tr>
@@ -216,7 +216,7 @@
     bgcolor 值    表格的背景颜色。
     background 值    表格的背景图像。
     frame 值    表格的框架。 框架的值有：void,above,below,hsides,lhs,rhs,vsides,box,border
-##### 9.列表 [见列表 001-列表.html](html/列表/001-列表.html)
+##### 9.列表 [见列表 001-列表.html](./%E7%A4%BA%E4%BE%8Bcode/html/列表/001-列表.html)
  列表有三种类型：无序列表 有序列表 定义列表。 
 ###### (1)无序列表：
 无序列表是一个项目的列表，此列项目使用粗体圆点（典型的小黑圆圈）进行标记。
@@ -264,7 +264,7 @@
 ##### 10.块
     <div>	定义文档中的分区或节（division/section）。
     <span>	定义 span，用来组合文档中的行内元素。
-##### 11.内联框架 [见内联框架 001-内联框架.html](html/内联框架/001-内联框架.html)
+##### 11.内联框架 [见内联框架 001-内联框架.html](./%E7%A4%BA%E4%BE%8Bcode/html/内联框架/001-内联框架.html)
     iframe 用于在网页内显示网页。
 ######   主要属性
     src 值    文档的 URL。
@@ -281,7 +281,7 @@
     align 值    对齐方式。
     hspace 值    水平边距。
     vspace 值    垂直边距。   
-##### 12.javascript [见javascript 001-javascript.html](html/javascript/001-javascript.html)
+##### 12.javascript [见javascript 001-javascript.html](./%E7%A4%BA%E4%BE%8Bcode/html/javascript/001-javascript.html)
 ###### (1)介绍
     <script> 标签  定义客户端脚本（JavaScript）。
     <script> 元素即可包含脚本语句，也可通过 src 属性指向外部脚本文件。
@@ -305,7 +305,7 @@
     <img src="https://www.w3school.com.cn/images/picture.jpg" >
     绝对文件路径是指向一个因特网文件的完整 URL
 
-##### 14.头部[见头部 001-头部.html](html/头部/001-头部.html)
+##### 14.头部[见头部 001-头部.html](./%E7%A4%BA%E4%BE%8Bcode/html/头部/001-头部.html)
     <head>	
     定义文档的头部。
     <title>	
@@ -341,7 +341,7 @@
     <script>	定义客户端脚本。
     <html>	定义文档的根元素。           
 
-##### 15.布局[见布局 001-布局.html](html/布局/001-布局.html)
+##### 15.布局[见布局 001-布局.html](./%E7%A4%BA%E4%BE%8Bcode/html/布局/001-布局.html)
 ###### (1)HTML5 语义元素
     header	定义文档或节的页眉
     nav	定义导航链接的容器
@@ -375,7 +375,7 @@
     ×	乘号	        &times;	
     ÷	除号	        &divide;	
 
-##### 17.框架 [见框架 001-框架.html](html/框架/001-框架.html)
+##### 17.框架 [见框架 001-框架.html](./%E7%A4%BA%E4%BE%8Bcode/html/框架/001-框架.html)
 ###### (1)frame语法
     <frameset cols="25%,75%">
         <frame src="frame_a.htm">
