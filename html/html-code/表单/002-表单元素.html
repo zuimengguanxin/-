@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    1.select元素定义下拉列表 <br>
+    2.option元素定义待选择的选项。 <br>
+    3.selected 属性来定义预定义选项。默认第一个选项 <br>
+    实例
+    <select name="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi">Audi</option>
+        <option value="fiat" selected>Fiat</option>
+    </select>
+    <br>
+    
+    4.textarea 元素定义多行输入字段（文本域）： <br>
+
+    实例
+    <textarea name="message" rows="10" cols="30">
+        The cat was playing in the garden.
+        </textarea>
+    <br> 
+    5.button 元素定义可点击的按钮： <br>
+
+    实例
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+    <br>
+   
+    6.datalist元素为 input 元素规定预定义选项列表。
+    用户会在他们输入数据时看到预定义选项的下拉列表。
+    input 元素的 list 属性必须引用 datalist 元素的 id 属性。 <br>
+    实例
+    <form action="action_page.php">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+</body>
+
+</html>

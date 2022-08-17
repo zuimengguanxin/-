@@ -1,6 +1,8 @@
 # html简介
     本篇笔记是本人学习html的见证
     html是一种超文本标记语言，是web开发的基础语言，是web开发的基础语言。
+    本笔记是根据 http://www.w3school.com.cn  所做。
+## html基础
  ### 1.标题
 
     <html>	
@@ -369,65 +371,109 @@
 
 ### 17.框架 [见框架 001-框架.html](html-code/框架/001-框架.html)
 #### (1)frame语法
+    垂直框架：
     <frameset cols="25%,75%">
         <frame src="frame_a.htm">
         <frame src="frame_b.htm">
     </frameset>
+    水平框架：
+    <frameset rows="25%,50%,25%">
+        <frame src="/example/html/frame_a.html">
+        <frame src="/example/html/frame_b.html">
+        <frame src="/example/html/frame_c.html">
+    </frameset>
+
 #### (2)主要标签
-    noframes    定义一个没有框架的文档
+    noframes    为不支持框架的浏览器添加 <noframes> 标签。
     frame	    定义一个框架。
+         属性   noresize="noresize"。假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，
     frameset	定义一个框架集。
     注意事项:不能将 <body></body> 标签与 <frameset></frameset> 标签同时使用！不过，假如你添加包含一段文本的 <noframes> 标签，就必须将这段文字嵌套于 <body></body> 标签内。（在下面的第一个实例中，可以查看它是如何实现的。）
 
+### 18.html版本
+    HTML	1991
+    HTML+	1993
+    HTML 2.0	1995
+    HTML 3.2	1997
+    HTML 4.01	1999
+    XHTML 1.0	2000
+    HTML5	2012
+    XHTML5	2013       
 
+## html进阶
+### 1.表单[见表单 001-表单.html](html-code/表单/001-表单.html)[见表单 002-表单元素.html](html-code/表单/002-表单元素.html)
+#### （1）主要标签
+    <form>	定义一个表单。
+        <input>	定义一个输入框。
+        <fieldset>    定义一个域集。
+            <legend>	定义 fieldset 元素的标题。
+        <datalist>
+            <option>	定义一个选项。
+        <keygen>
+        <output>
+    <textarea>	定义一个文本区。
+    <select>	定义一个下拉列表。
+        <option>	定义一个下拉列表的选项。
+    <button>	定义一个按钮。
+    <label for=#id>  	定义一个标签，其中包含一个或多个 id 属性。
+
+#### （2）form主要属性
+    accept-charset	规定在被提交表单中使用的字符集（默认：页面字符集）。
+    action	规定向何处提交表单的地址（URL）（提交页面）。
+    autocomplete	规定浏览器应该自动完成表单（默认：开启）。
+    enctype	规定被提交数据的编码（默认：url-encoded）。
+    method  值    get   post
+    name	规定识别表单的名称（对于 DOM 使用：document.forms.name）。
+    novalidate	规定浏览器不验证表单。
+    target  值   
+        _blank 新窗口 _self 当前窗口  _parent 父框架 _top body中 frameName iframe中
+#### （3）input属性
+##### 主要属性
+    type	规定输入框的类型。
+    submit	定义提交按钮（提交表单）
+    list    定义下拉列表输入，必须引用 <datalist> 标签的id属性
+##### 输入限制属性
+    disabled	规定输入字段应该被禁用。
+    max	规定输入字段的最大值。
+    maxlength	规定输入字段的最大字符数。
+    min	规定输入字段的最小值。
+    pattern	规定通过其检查输入值的正则表达式。
+    readonly	规定输入字段为只读（无法修改）。
+    required	规定输入字段是必需的（必需填写）。
+    size	规定输入字段的宽度（以字符计）。
+    step	规定输入字段的合法数字间隔。
+    value	规定输入字段的默认值。
+#### （4） 输入类型（type值） [见表单 003-输入类型（type值）.html](html-code/表单/003-输入类型（type值）.html)
+##### 主要值：
+    text    定义一个单行文本输入。
+    password	定义一个密码输入。
+    submit	定义一个提交按钮。
+    radio	定义一个单选框。
+    checkbox	定义一个复选框。
+    file	定义一个文件输入。
+    hidden	定义一个隐藏输入。
+    image	定义一个图像输入。
+    button	定义一个按钮。
+    reset	定义一个重置按钮。
+    
+    
+ ##### HTML5 增加了多个新的输入类型：
+    color   定义一个颜色输入。
+    date   定义一个日期输入。
+    datetime  定义一个日期时间输入。
+    datetime-local   定义一个日期时间输入。
+    email  定义一个电子邮件输入。
+    month 定义一个月份输入。 
+    number  定义一个数字输入。
+    range   定义一个范围输入。
+    search  定义一个搜索输入。
+    tel 定义一个电话输入。
+    time    定义一个时间输入。
+    url 定义一个网址输入。
+    week    定义一个星期输入。
 
     
-
-
-
-
-
-
-
-
-
-
-#### html标签的属性
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-下面列出了适用于大多数 HTML 元素的属性：
-    1.class：用于定义元素的类。
-    2.id：用于定义元素的id。
-    3.style：用于定义元素的样式。
-    4.title：用于定义元素的标题。
-
-
-
-
-
-
-
+#### （5）txtarea主要属性  
+    cols="cols"。定义文本区的列数。
+    rows="rows"。定义文本区的行数。
+    disabled="disabled"。假如文本区被禁用，则该属性被设置为 disabled。

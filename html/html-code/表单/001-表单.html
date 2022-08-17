@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>此处，提交的结果将在新的浏览器标签中打开：</p>
+    <form action="/action_page.php" target="_blank">
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        </div>
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+        </div>
+        <div>
+            <label for="subject">Subject:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+
+    <p>
+        method 属性指定提交表单数据时要使用的 HTTP 方法。
+        表单数据可以作为 URL 变量（使用 method="get"）或作为 HTTP post 事务（使用 method="post"）发送。
+        提交表单数据时，默认的 HTTP 方法是 GET。
+    </p>
+
+    <p>此例在提交表单数据时使用 GET 方法：</p>
+    <form action="/action_page.php" method="get">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>此例在提交表单数据时使用 POST 方法：</p>
+    <form action="/action_page.php" method="post">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+    <p>关于 GET 的注意事项：</p>
+    <p>
+        以名称/值对的形式将表单数据追加到 URL
+        永远不要使用 GET 发送敏感数据！（提交的表单数据在 URL 中可见！）
+        URL 的长度受到限制（2048 个字符）
+        对于用户希望将结果添加为书签的表单提交很有用
+        GET 适用于非安全数据，例如 Google 中的查询字符串
+    </p>
+
+    <p>关于 POST 的注意事项：</p>
+    <p>
+        将表单数据附加在 HTTP 请求的正文中（不在 URL 中显示提交的表单数据）
+        POST 没有大小限制，可用于发送大量数据。
+        带有 POST 的表单提交无法添加书签
+        提示：如果表单数据包含敏感信息或个人信息，请务必使用 POST！
+    </p>
+
+    <p>
+        autocomplete 属性规定表单是否应打开自动完成功能。
+        启用自动完成功能后，浏览器会根据用户之前输入的值自动填写值。
+    </p>
+
+    <p>启用自动填写的表单：</p>
+    <form action="/action_page.php" autocomplete="on">
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+
+    <p>
+
+        novalidate 属性是一个布尔属性。
+        如果已设置，它规定提交时不应验证表单数据。
+        实例 未设置 novalidate 属性的表单：
+    </p>
+
+    <form action="/action_page.php" novalidate>
+        <input type="text" name="fname" placeholder="First Name">
+        <input type="text" name="lname" placeholder="Last Name">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
