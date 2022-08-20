@@ -549,4 +549,64 @@
 #### （3）音频 [见媒体 002-音频.html](html-code/媒体/002-音频.html)
      audio 标签是一种特殊的 HTML 标签，定义 HTML 文档中的音频。
      embed 标签是一种特殊的 HTML 标签，定义了 HTML 文档中的音频。
+##### 定义音频音频的语句
+    1.使用 embed 元素
+    <embed height="100" width="300" src="https://www.w3school.com.cn/i/horse.mp3" />
+    2.使用 object 元素
+    <object height="100" width="300" data="https://www.w3school.com.cn/i/horse.mp3"></object>
+    3.使用 audio 元素
+    <audio height="100" width="300" src="https://www.w3school.com.cn/i/horse.mp3"></audio>  //不起作用        
+     <audio controls="controls">
+        <source src="https://www.w3school.com.cn/i/horse.mp3" type="audio/mp3" />
+        <source src="song.ogg" type="audio/ogg" />   //两种格式选一
+      Your browser does not support this audio format.
+    </audio> -->
+     4.使用雅虎媒体播放器 
+    <a href="https://www.w3school.com.cn/i/horse.mp3">Play Sound</a>
+    <a href="song1.mp3">Play Song 1</a>
+    <a href="song2.mp3">Play Song 2</a>
+    <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+#### （4）视频 [见媒体 003-视频.html](html-code/媒体/003-视频.html)
+##### 定义视频的语句
+    1.使用 embed 标签
+        embed 标签的作用是在 HTML 页面中嵌入多媒体元素。
+        下面的 HTML 代码显示嵌入网页的 Flash 视频：
+        <embed src="movie.swf" height="200" width="200"/>
+    2.使用 object> 标签
+        object标签的作用是在 HTML 页面中嵌入多媒体元素。
+        下面的 HTML 片段显示嵌入网页的一段 Flash 视频：
+        <object data="movie.swf" height="200" width="200"/>
+    3.使用 video 标签
+        video 是 HTML 5 中的新标签。
+        video 标签的作用是在 HTML 页面中嵌入视频元素。
+        以下 HTML 片段会显示一段嵌入网页的 ogg、mp4 或 webm 格式的视频：
+        <video width="320" height="240" controls="controls">
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <source src="movie.webm" type="video/webm" />
+        Your browser does not support the video tag.
+        </video>
+        您必须把视频转换为很多不同的格式。
+        video 元素在老式浏览器中无效。
+        video 元素无法通过 HTML 4 和 XHTML 验证。
+    4.最好的 HTML 解决方法
+        HTML 5 + object + embed
+        <video width="320" height="240" controls="controls">
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <source src="movie.webm" type="video/webm" />
+          <object data="movie.mp4" width="320" height="240">
+            <embed src="movie.swf" width="320" height="240" />
+          </object>
+        </video>
+        上例中使用了 4 中不同的视频格式。HTML 5 video 元素会尝试播放以 mp4、ogg 或 webm 格式中的一种来播放视频。如果均失败，则回退到 embed 元素。
+##### video主要属性
+      controls      控件
+      loop          循环播放
+      autoplay     自动播放
+      mute           静音
+
+      
+    
+
 
