@@ -1,8 +1,7 @@
 # css 简介 [示例](css-code/多个样式表。html)
 
 CSS 是一种描述 HTML 文档样式的语言。
-CSS 指的是层叠样式表* (Cascading Style Sheets)
-CSS 描述了如何在屏幕、纸张或其他媒体上显示 HTML 元素
+CSS 指的是层叠样式表* (CascadinCSS 描述了如何在屏幕、纸张或其他媒体上显示 HTML 元素
 CSS 节省了大量工作。它可以同时控制多张网页的布局外部样式表存储在 CSS 文件中
 
 ## css 基础
@@ -38,7 +37,7 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     (3) 其他
 
 | 选择器                            | 例子                                         | 例子描述                                            |
-| --------------------------------- | -------------------------------------------- | --------------------------------------------------- |
+|  |  |  |
 | .class                            | .intro                                       | 选择 class="intro" 的所有元素。                     |
 | .class1.class2                    | .name1.name2                                 | 选择 class 属性中同时有 name1 和 name2 的所有元素。 |
 | .class1 .class2                   | .name1 .name2                                | 选择作为类名 name1 元素后代的所有类名 name2 元素。  |
@@ -66,10 +65,10 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
 | :disabled                         | input:disabled                               | 选择每个被禁用的 input 元素。                       |
 | :empty                            | p:empty                                      | 选择没有子元素的每个 p 元素（包括文本节点）。       |
 | :enabled                          | input:enabled                                | 选择每个启用的 input 元素。                         |
-| :first-child                      | p:first-child                                | 选择属于父元素的第一个子元素的每个 p 元素。         |
-| ::first-letter                    | p::first-letter                              | 选择每个 p 元素的首字母。                           |
-| ::first-line                      | p::first-line                                | 选择每个 p 元素的首行。                             |
-| :first-of-type                    | p:first-of-type                              | 选择属于其父元素的首个 p 元素的每个 p 元素。        |
+| :firstchild                      | p:firstchild                                | 选择属于父元素的第一个子元素的每个 p 元素。         |
+| ::firstletter                    | p::firstletter                              | 选择每个 p 元素的首字母。                           |
+| ::firstline                      | p::firstline                                | 选择每个 p 元素的首行。                             |
+| :firstoftype                    | p:firstoftype                              | 选择属于其父元素的首个 p 元素的每个 p 元素。        |
 | :focus                            | input:focus                                  | 选择获得焦点的 input 元素。                         |
 | :fullscreen                       | :fullscreen                                  | 选择处于全屏模式的元素。                            |
 | :hover                            | a:hover                                      | 选择鼠标指针位于其上的链接。                        |
@@ -77,21 +76,21 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
 | :indeterminate                    | input:indeterminate                          | 选择处于不确定状态的 input 元素。                   |
 | :invalid                          | input:invalid                                | 选择具有无效值的所有 input 元素。                   |
 | :lang(language)                   | p:lang(it)                                   | 选择 lang 属性等于 "it"（意大利）的每个 p 元素。    |
-| :last-child                       | p:last-child                                 | 选择属于其父元素最后一个子元素每个 p 元素。         |
-| :last-of-type                     | p:last-of-type                               | 选择属于其父元素的最后 p 元素的每个 p 元素。        |
+| :lastchild                       | p:lastchild                                 | 选择属于其父元素最后一个子元素每个 p 元素。         |
+| :lastoftype                     | p:lastoftype                               | 选择属于其父元素的最后 p 元素的每个 p 元素。        |
 | :link                             | a:link                                       | 选择所有未访问过的链接。                            |
 | :not(selector)                    | :not(p)                                      | 选择非 p 元素的每个元素。                           |
-| :nth-child(n)                     | p:nth-child(2)                               | 选择属于其父元素的第二个子元素的每个 p 元素。       |
-| :nth-last-child(n)                | p:nth-last-child(2)                          | 同上，从最后一个子元素开始计数。                    |
-| :nth-of-type(n)\	p:nth-of-type(2) | 选择属于其父元素第二个 p 元素的每个 p 元素。 |                                                     |
-| :nth-last-of-type(n) 同上，       | p:nth-last-of-type(2)                        | 但是从最后一个子元素开始计数。                      |
-| :only-of-type                     | p:only-of-type                               | 选择属于其父元素唯一的 p 元素的每个 p 元素。        |
-| :only-child                       | p:only-child                                 | 选择属于其父元素的唯一子元素的每个 p 元素。         |
+| :nthchild(n)                     | p:nthchild(2)                               | 选择属于其父元素的第二个子元素的每个 p 元素。       |
+| :nthlastchild(n)                | p:nthlastchild(2)                          | 同上，从最后一个子元素开始计数。                    |
+| :nthoftype(n)\	p:nthoftype(2) | 选择属于其父元素第二个 p 元素的每个 p 元素。 |                                                     |
+| :nthlastoftype(n) 同上，       | p:nthlastoftype(2)                        | 但是从最后一个子元素开始计数。                      |
+| :onlyoftype                     | p:onlyoftype                               | 选择属于其父元素唯一的 p 元素的每个 p 元素。        |
+| :onlychild                       | p:onlychild                                 | 选择属于其父元素的唯一子元素的每个 p 元素。         |
 | :optional                         | input:optional                               | 选择不带 "required" 属性的 input 元素。             |
-| :out-of-range                     | input:out-of-range                           | 选择值超出指定范围的 input 元素。                   |
+| :outofrange                     | input:outofrange                           | 选择值超出指定范围的 input 元素。                   |
 | ::placeholder                     | input::placeholder                           | 选择已规定 "placeholder" 属性的 input 元素。        |
-| :read-only                        | input:read-only                              | 选择已规定 "readonly" 属性的 input 元素。           |
-| :read-write                       | input:read-write                             | 选择未规定 "readonly" 属性的 input 元素。           |
+| :readonly                        | input:readonly                              | 选择已规定 "readonly" 属性的 input 元素。           |
+| :readwrite                       | input:readwrite                             | 选择未规定 "readonly" 属性的 input 元素。           |
 | :required                         | input:required                               | 选择已规定 "required" 属性的 input 元素。           |
 | :root                             | :root                                        | 选择文档的根元素。                                  |
 | ::selection                       | ::selection                                  | 选择用户已选取的元素部分。                          |
@@ -110,22 +109,21 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
 #### (1) 外部 CSS
 
     1. 通过使用外部样式表，您只需修改一个文件即可改变整个网站的外观！
-    2. 每张 HTML 页面必须在 head 部分的<link> 元素内
+    2. 每张 HTML 页面必须在 head 部分的<lin元素内
     包含对外部样式表文件的引用。
     3. 外部样式表可以在任何文本编辑器中编写，并且必须以 .css 扩展名保存。
     4. 外部 .css 文件不应包含任何 HTML 标签。
-    "mystyle.css" 是这样的：
-    "mystyle.css"
-    body {
-        background-color: lightblue;
+    "的：
+ body {
+        backgroundcolor: lightblue;
     }
 
     h1 {
         color: navy;
-        margin-left: 20px;
+        marginleft: 20px;
     }
     5. 请勿在属性值和单位之间添加空格
-    （例如 margin-left: 20 px;）。正确的写法是：margin-left: 20px;
+    （例如 marginleft: 20 px;）。正确的写法是：marginleft: 20px;
 
 实例
 外部样式在 HTML 页面 head 部分内的 link 元素中进行定义：
@@ -137,46 +135,27 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
 #### (2) 内部 CSS
 
     如果一张 HTML 页面拥有唯一的样式，那么可以使用内部样式表。
-    内部样式是在 head 部分的 style 元素中进行定义。
+    内部样式是在 head 部分
 实例
-内部样式在 HTML 页面的 head 部分内的 style 元素中进行定义：
+内部样式在 HTML 页面的 head 部分内
 
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <style>
-            body {
-                background-color: linen;
+    <!DOCTYPE htm    <htm    <hea        <styl            body {
+                backgroundcolor: linen;
             }
 
     h1 {
                 color: maroon;
-                margin-left: 40px;
-            }</style>
-    </head>
-    <body>
-        <h1>This is a heading </h1>
-        <p>This is a paragraph.</p>
-    </body>
-    </html>
-
+                marginleft: 40px;
+            }</styl    </hea    <bod        <hhis is a heading </h        <his is a paragraph.</    </bod    </htm
 #### (3) 行内 CSS
 
     1. 行内样式（也称内联样式）可用于为单个元素应用唯一的样式。
-    2. 如需使用行内样式，请将 style 属性添加到相关元素。style 属性可包含任何 CSS 属性。
+    2. 如需使用行内样式，请CSS 属性。
     3. 行内样式失去了样式表的许多优点（通过将内容与呈现混合在一起）。请谨慎使用此方法。
 
 实例
-行内样式在相关元素的 "style" 属性中定义：
-
-    <!DOCTYPE html>
-    <html>
-    <body>
-        <h1 style="color:blue;text-align:center;">This is a heading </h1>
-        <p style="color:red;">This is a paragraph.</p>
-    </body>
-    </html>
-
+行内样式在相关元素的
+    <!DOCTYPE htm    <htm    <bod        <hlue;textalign:center;his is a heading </h        <ed;his is a paragraph.</    </bod    </htm
 #### (4) 多个样式表优先级
 
     如果在不同样式表中为同一选择器（元素）定义了一些属性，则将使用最后读取的样式表中的值。
@@ -193,34 +172,24 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     }
 如果内部样式是在链接到外部样式表之后定义的，则 h1 元素将是橙色：
 
-    <head>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    <style>
-    h1 {
+    <hea不过，如果在链接到外部样式表之前定义了内部样式，则    <link relpe="text/css" href="styl    h1 {
     color: orange;
     }
-    </style>
-    </head>
-不过，如果在链接到外部样式表之前定义了内部样式，则 h1 元素将是深蓝色：
+    </styl    </hea不过，如果在链接到外部样式表之前定义了内部样式，则 h1 元素将是深蓝色：
 
-    <head>
-    <style>
-    h1 {
+    <hea    <styl    h1 {
     color: orange;
     }
-    </style>
-    <link rel="stylesheet" type="text/css" href="mystyle.css">
-    </head>
-层叠顺序
+    </styl    <link relpe="text/css" href="/hea层叠顺序
 
     当为某个 HTML 元素指定了多个样式时，
     页面中的所有样式将按照以下规则“层叠”为新的“虚拟”样式表，其中第一优先级最高：
-    行内样式（在 HTML 元素中）>内部样式表（在 head 部分）>外部样式表>浏览器默认样式
+    行内样式（在 HTML 元素中部样式表（在 head 部分部样式览器默认样式
     因此，行内样式具有最高优先级，并且将覆盖外部和内部样式以及浏览器默认样式。
 
 ### 4. 添加注释
 
-    1. 位于 style 元素内的 CSS 注释，以 /* 开始，以*/ 结束，如：
+    1. 位 注释，以 /* 开始，以*/ 结束，如：
         /* 这是一条单行注释*/
         p {
             color: red;/* 把文本设置为红色*/
@@ -230,149 +199,142 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
         注释 */
 
     2. 语法在 HTML 源代码中添加注
-    <!--...-->, 如：
-    <!-- 这些段落将是红色的 -->
-    <p>Hello World!</p>
-    <p>这段文本由 CSS 设置样式。</p>
-    <p>CSS 注释不会在输出中显示。</p>
-
+    <!... 如：
+    <! 这些段落将是红色的     <ello World!</    <段文本由 CSS 设置样式。</    <SS 注释不会在输出中显示。</
 ### 5.css 背景
 
-#### (1)background-image
+#### (1)backgroundimage
 
     1. 指定用作元素背景的图像。
     2. 默认情况下，图像会重复，以覆盖整个元素。
     3. 使用背景图像时，请使用不会干扰文本的图像。
     body {
-        background-image: url("paper.gif");
+        backgroundimage: url("paper.gif");
     }
-    4. 可以为特定元素设置背景图像，例如<p> 元素：
+    4. 可以为特定元素设置背景图像，例如<元素：
     p {
-        background-image: url("paper.gif");
+        backgroundimage: url("paper.gif");
     }
 
-#### (2)background-repeat
+#### (2)backgroundrepeat
 
-    1. 默认情况下，background-image 属性在水平和垂直方向上都重复图像。
+    1. 默认情况下，backgroundimage 属性在水平和垂直方向上都重复图像。
         设置只在水平方向重复平铺图片
-        background-repeat: repeat-x;
+        backgroundrepeat: repeatx;
         设置只在垂直方向重复平铺图像
-        background-repeat: repeat-y;。
+        backgroundrepeat: repeaty;。
         设置不重复平铺图片
-        background-repeat: no-repeat
+        backgroundrepeat: norepeat
 
-#### (3)background-position
+#### (3)backgroundposition
 
     1. 属性用于指定背景图像的位置。
     值 top bottom right left center
         把背景图片放在右上角：
     body {
-    background-image: url("tree.png");
-    background-repeat: no-repeat;
-    background-position: right top;
+    backgroundimage: url("tree.png");
+    backgroundrepeat: norepeat;
+    backgroundposition: right top;
 
-#### (4)background-attachment 背景附着
+#### (4)backgroundattachment 背景附着
 
-    1.background-attachment 属性指定背景图像是应该滚动还是固定的（不会随页面的其余部分一起滚动）：
+    1.backgroundattachment 属性指定背景图像是应该滚动还是固定的（不会随页面的其余部分一起滚动）：
     2. 指定应该固定背景图像：
     body {
-        background-image: url("tree.png");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-attachment: fixed;
+        backgroundimage: url("tree.png");
+        backgroundrepeat: norepeat;
+        backgroundposition: right top;
+        backgroundattachment: fixed;
     }
 
     指定背景图像应随页面的其余部分一起滚动：
 
     body {
-        background-image: url("tree.png");
-        background-repeat: no-repeat;
-        background-position: right top;
-        background-attachment: scroll;
+        backgroundimage: url("tree.png");
+        backgroundrepeat: norepeat;
+        backgroundposition: right top;
+        backgroundattachment: scroll;
     }
 
 #### (5) 简写背景属性
 
     在使用简写属性时，属性值的顺序为：
-    background-color
-    background-image
-    background-repeat
-    background-attachment
-    background-position
+    backgroundcolor
+    backgroundimage
+    backgroundrepeat
+    backgroundattachment
+    backgroundposition
     属性值之一缺失并不要紧，只要按照此顺序设置其他值即可。
 
 #### (6) 所有 css 属性背景
 
     background	在一条声明中设置所有背景属性的简写属性。
-    background-attachment	设置背景图像是固定的还是与页面的其余部分一起滚动。 fixed scroll
-    background-clip	规定背景的绘制区域。
-    background-color	设置元素的背景色。
-    background-image	设置元素的背景图像。
-    background-origin	规定在何处放置背景图像。
-    background-position	设置背景图像的开始位置。
-    background-repeat	设置背景图像是否及如何重复。
-    background-size	 规定背景图像的尺寸。
+    backgroundattachment	设置背景图像是固定的还是与页面的其余部分一起滚动。 fixed scroll
+    backgroundclip	规定背景的绘制区域。
+    backgroundcolor	设置元素的背景色。
+    backgroundimage	设置元素的背景图像。
+    backgroundorigin	规定在何处放置背景图像。
+    backgroundposition	设置背景图像的开始位置。
+    backgroundrepeat	设置背景图像是否及如何重复。
+    backgroundsize	 规定背景图像的尺寸。
 
 ### 6.border 边框
 
-#### (1)border-style  边框样式
-
-    属性指定要显示的边框类型。
-    border-style 属性可以设置一到四个值（用于上边框、右边框、下边框和左边框）。顺时针
+#### (1)borde   属性指定要显示的边框类型。
+    borde四个值（用于上边框、右边框、下边框和左边框）。顺时针
     允许以下值：
-        dotted - 定义点线边框
-        dashed - 定义虚线边框
-        solid - 定义实线边框
-        double - 定义双边框
-        groove - 定义 3D 坡口边框。效果取决于 border-color 值
-        ridge - 定义 3D 脊线边框。效果取决于 border-color 值
-        inset - 定义 3D inset 边框。效果取决于 border-color 值
-        outset - 定义 3D outset 边框。效果取决于 border-color 值
-        none - 定义无边框
-        hidden - 定义隐藏边框
+        dotted  定义点线边框
+        dashed  定义虚线边框
+        solid  定义实线边框
+        double  定义双边框
+        groove  定义 3D 坡口边框。效果取决于 bordercolor 值
+        ridge  定义 3D 脊线边框。效果取决于 bordercolor 值
+        inset  定义 3D inset 边框。效果取决于 bordercolor 值
+        outset  定义 3D outset 边框。效果取决于 bordercolor 值
+        none  定义无边框
+        hidden  定义隐藏边框
 
-#### (2)border-width
+#### (2)borderwidth
 
     1. 属性指定四个边框的宽度。
     2. 可以将宽度设置为特定大小（以 px、pt、cm、em 计），也可以使用以下三个预定义值之一：thin、medium 或 thick：
-    3.border-width 属性可以设置一到四个值（用于上边框、右边框、下边框和左边框）顺时针
+    3.borderwidth 属性可以设置一到四个值（用于上边框、右边框、下边框和左边框）顺时针
 
-#### (3)border-color  边框颜色
+#### (3)bordercolor  边框颜色
 
     1. 属性用于设置四个边框的颜色。
     2.transparent   透明
-    3. 如果未设置 border-color，则它将继承元素的颜色。
-    4.border-color 属性可以设置一到四个值（用于上边框、右边框、下边框和左边框）。
+    3. 如果未设置 bordercolor，则它将继承元素的颜色。
+    4.bordercolor 属性可以设置一到四个值（用于上边框、右边框、下边框和左边框）。
 
 #### (4) 边框各边
 
-    border-style 或 border-color 或 border-width 属性多个值
+    bordecolor 或 borderwidth 属性多个值
     1. 如果属性设置四个值：用于上边框、右边框、下边框和左边框（顺时针）。
     2. 如果属性设置三个值：用于上边框、右和左边框、下边框。
     3. 如果属性设置两个值：上和下边框、右和左边框。
     4. 如果 属性设置一个值：四条边框
-    注：可以单独设置各边，中间加 left right top bottom 如 border-right-color
+    注：可以单独设置各边，中间加 left right top bottom 如 borderrightcolor
 
 #### （5）简写边框属性
 
     为了缩减代码，也可以在一个属性中指定所有单独的边框属性。
     border 属性是以下各个边框属性的简写属性：
-        border-width
-        border-style（必需）
-        border-color
+        borderwidth
+        bo    bordercolor
         如：
         p {
             border: 5px solid red;
         }
 
-#### （6）border-radius   圆角边框
+#### （6）borderradius   圆角边框
 
     用于向元素添加圆角边框
         如：
         
         p {
             border: 2px solid red;
-            border-radius: 5px;
+            borderradius: 5px;
         }
 
 ### 7.margin 外边距
@@ -383,13 +345,13 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     然后，该元素将占据指定的宽度，并且剩余空间将在左右边界之间平均分配。
     4.margin 属性设置为 inherit，使元素继承父元素。
 
-#### （1）Margin - 单独的边
+#### （1）Margin  单独的边
 
     CSS 拥有用于为元素的每一侧指定外边距的属性：
-    margin-top
-    margin-right
-    margin-bottom
-    margin-left
+    margintop
+    marginright
+    marginbottom
+    marginleft
 
 #### （2）magin 简写属性
 
@@ -416,19 +378,19 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     1.CSS padding 属性用于在任何定义的边界内的元素内容周围生成空间。
     2. 通过 CSS，您可以完全控制内边距（填充）。有一些属性可以为元素的每一侧（上、右、下和左侧）设置内边距。
     3. 所有内边距属性都可以设置以下值：
-        length - 以 px、pt、cm 等单位指定内边距
-        % - 指定以包含元素宽度的百分比计的内边距
-        inherit - 指定应从父元素继承内边距
+        length  以 px、pt、cm 等单位指定内边距
+        %  指定以包含元素宽度的百分比计的内边距
+        inherit  指定应从父元素继承内边距
 
-#### （1）Padding - 单独的边
+#### （1）Padding  单独的边
 
     CSS 拥有用于为元素的每一侧指定内边距的属性：
-        padding-top
-        padding-right
-        padding-bottom
-        padding-left
+        paddingtop
+        paddingright
+        paddingbottom
+        paddingleft
 
-#### （2）Padding - 简写属性
+#### （2）Padding  简写属性
 
     如：
     padding: 25px 50px 75px 100px;
@@ -436,7 +398,7 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     三个值：上 右左 下
     两个值；上下  右左
 
-#### (3) 内边距和元素宽度 [ 见内边距 001-元素宽度 ](css-code/内边距/001-元素宽度)
+#### (3) 内边距和元素宽度 [ 见内边距 001元素宽度 ](csscode/内边距/001元素宽度)
 
     1.CSS width 属性指定元素内容区域的宽度。内容区域是元素（盒模型）的内边距、边框和外边距内的部分。
     2. 因此，如果元素拥有指定的宽度，则添加到该元素的内边距会添加到元素的总宽度中。
@@ -445,27 +407,27 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
         width: 300px;
         padding: 25px;
     }
-    4.若要将宽度保持为 300px，无论填充量如何，那么您可以使用 box-sizing 属性。这将导致元素保持其宽度。如果增加内边距，则可用的内容空间会减少。
+    4.若要将宽度保持为 300px，无论填充量如何，那么您可以使用 boxsizing 属性。这将导致元素保持其宽度。如果增加内边距，则可用的内容空间会减少。
     div {
     width: 300px;
     padding: 25px;
-    box-sizing: border-box;
+    box-sizing: borderbox;
     }
 #### (4) height 和 width 
 ##### 用于设置元素的高度和宽度。
     height 和 width 属性不包括内边距、边框或外边距。
     设置的是元素内边距、边框以及外边距内的区域的高度或宽度。
 ##### height 和 width 属性可设置如下值：
-    auto - 默认。浏览器计算高度和宽度。
-    length - 以 px、cm 等定义高度/宽度。
-    % - 以包含块的百分比定义高度/宽度。
-    initial - 将高度/宽度设置为默认值。
-    inherit - 从其父值继承高度/宽度。
+    auto  默认。浏览器计算高度和宽度。
+    length  以 px、cm 等定义高度/宽度。
+    %  以包含块的百分比定义高度/宽度。
+    initial  将高度/宽度设置为默认值。
+    inherit  从其父值继承高度/宽度。
 ##### 设置 CSS 尺寸属性
     属性	描述
     height	设置元素的高度。
     max-height	设置元素的最大高度。
-    min-height	设置元素的最小高度。
+    minheight	设置元素的最小高度。
 
     width	设置元素的宽度。
     max-width	设置元素的最大宽度
@@ -475,10 +437,10 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
 ![框模型](https://www.w3school.com.cn/i/css/boxmodel.gif)
 #### (1)对不同部分的说明：
 
-    内容 - 框的内容，其中显示文本和图像。
-    内边距 - 清除内容周围的区域。内边距是透明的。
-    边框 - 围绕内边距和内容的边框。
-    外边距 - 清除边界外的区域。外边距是透明的。
+    内容  框的内容，其中显示文本和图像。
+    内边距  清除内容周围的区域。内边距是透明的。
+    边框  围绕内边距和内容的边框。
+    外边距  清除边界外的区域。外边距是透明的。
 
     元素框的最内部分是实际的内容，直接包围内容的是内边距。
     内边距呈现了元素的背景。
@@ -497,8 +459,7 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     元素总高度 = 高度 + 上内边距 + 下内边距 + 上边框 + 下边框 + 上外边距 + 下外边距
 ### 10.轮廓
 #### （1）CSS 拥有如下轮廓属性：
-    outline-style
-    outline-color
+    outine-color
     outline-width
     outline-offset
     outline
@@ -532,8 +493,336 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
 #### （5）outline-offset	
     指定轮廓与元素的边缘或边框之间的空间。
 ### 11.css文本属性
-    color              文本颜色
-    background-color   背景颜色
-    text-align      文本对齐center left right justify
-    direction       文本位置
+#### （1）基本属性
+    color             文本颜色
+    background-color  背景颜色
+    text-align        文本对齐center left right justify
+    direction         文本位置 rtl 
+    unicodebidi      与 direction 属性一起使用，设置或返回是否应重写文本来支持同一文档中的多种语言。 bidioverride
+    vertical-align    垂直对齐方式  top middle bottom
+#### （2）文本处理
+    text-decoration   设置或删除文本修饰 none通常用作从链接上删除下划线 overline 上  linethrough 穿过  underline 下
+    text-transform    大小写  uppercase 大写 lowercase 小写    capitalize 首字母大写
+    text-indent       文本缩进   
+    letter-spacing    文本中字符间距
+    line-height       行之间的间距
+    word-spacing      指定文本中单词的间距
+    white-space       空白的处理方式
+#### （3）文本阴影
+    textshadow       文本阴影 
+        h1 {
+            textshadow: 2px 2px 5px red;
+        }
+#### （4）字体字号等处理
+    font-family      文本字体
+       如果不想使用 HTML 中的任何标准字体，可以使用 Google Fonts API 向页面添加数百种其他字体。
+       只需添加一个样式表链接并引用您选择的字体系列：<link relef="https://fonts.googleapis.com/css?family=Sofia
+    fon样式，用于指定斜体文本      normal  文字正常显示  italic  文本以斜体显示  oblique  文本为“倾斜”（倾斜与斜体非常相似，但支持较少）
+    font-weight      字体的粗细  normal  bold
+    font-variant     以小型大写字母显示文本 normal  smallcaps()
+    font-size        文本大小   支持 px em  %    vw
+#### （5）简写字体属性
+    为了缩短代码，也可以在一个属性中指定所有单个字体属性。
+    font 属性是以下属性的简写属性：
+        font-variant
+        font-weight
+        font-size/lineheight
+        font-family
 
+    如：p.a {
+        font: 20px Arial, sansserif;
+        }
+
+        p.b {
+            font: italic smallcaps bold 12px/30px Georgia, serif;
+        }
+    fontsize 和 fontfamily 的值是必需的
+### 12.链接
+#### （1）链接可以使用任何 CSS 属性
+    如 color、fontfamily、background 等来设置样式。
+#### （3）可以根据链接处于什么状态来设置链接的不同样式。
+    四种链接状态分别是：
+    a:link  正常的，未访问的链接
+    a:visited  用户访问过的链接
+    a:hover  用户将鼠标悬停在链接上时
+    a:active  链接被点击时
+
+    如果为多个链接状态设置样式，请遵循如下顺序规则：
+
+    a:hover 必须 a:link 和 a:visited 之后
+    a:active 必须在 a:hover 之后
+#### （4）鼠标状态
+    <span style="cursor:auto">auto</span><br>
+
+    auto
+    crosshair
+    default
+    e-resize
+    help
+    move
+    n-resize
+    ne-resize
+    nw-resize
+    pointer
+    progress
+    s-resize
+    se-resize
+    sw-resize
+    text
+    w-resize
+    wait
+### 13.列表属性
+#### (1)简介
+    CSS 列表属性使您可以：
+        1.为有序列表设置不同的列表项标记
+        2.为无序列表设置不同的列表项标记
+        3.将图像设置为列表项标记
+        4.为列表和列表项添加背景色
+#### （2）主要属性
+    list-style-type 属性指定列表项标记的类型。circle square upper-roman lower-alpha
+    list-style-image 属性将图像指定为列表项标记 url()
+    list-style-position  指定列表项标记（项目符号）的位置。outside inside none
+#### （3）简写属性
+   list-style 属性是一种简写属性。它用于在一条声明中设置所有列表属性：
+    实例
+    ul {
+    list-style: square inside url("sqpurple.gif");
+    }
+### 14.css表格属性 [花表格](css-code/表格/001-css花表格案例.html)
+    border-collapse 表格合并规定是否应折叠表格边框
+    border 边框
+    text-align 水平对齐
+    vertical-align 垂直对齐
+    padding    内边距
+    
+    border	简写属性。在一条声明中设置所有边框属性。
+    border-spacing	规定相邻单元格之间的边框的距离。
+    caption-side	规定表格标题的位置。
+    empty-cells	规定是否在表格中的空白单元格上显示边框和背景。
+    table-layout	设置用于表格的布局算法。
+
+    在 <table> 元素周围添加带有 overflow-x:auto 的容器元素（例如 <div>），以实现响应式效果：   
+## css中级
+### 1.display
+     默认值 block 块级元素 或 inline 行内元素 
+     none  隐藏或使用元素，visibility:hidden;，也可以隐藏元素。该元素仍将占用与之前相同的空间。元素将被隐藏，但仍会影响布局：
+    flex
+    inline-block 
+    如果设置了 display: inline-block，将保留上下外边距/内边距，而 display: inline 则不会。
+
+
+#### (1)块级元素（block element）
+    块级元素总是从新行开始，并占据可用的全部宽度（尽可能向左和向右伸展）。
+    块级元素的一些例子：
+    <div>
+    <h1> - <h6>
+    <p>
+    <form>
+    <header>
+    <footer>
+    <section>
+#### (2)行内元素（inline element）
+    内联元素不从新行开始，仅占用所需的宽度。
+    这是段落中的行内 <span> 元素。
+    行内元素的一些例子：
+    <span>
+    <a>
+    <img>
+### 2.position 定位
+#### （1）position 属性规定应用于元素的定位方法的类型。
+    有五个不同的位置值：
+    static       静态的
+    relative     相对于其正常位置进行定位
+    fixed        相对于视口定位的  固定定位
+    absolute     相对于最近的定位祖先元素进行定位
+    sticky       根据用户的滚动位置进行定位 粘性定位
+
+    元素其实是使用 top、bottom、left 和 right 属性定位的。但是，除非首先设置了 position 属性，否则这些属性将不起作用。根据不同的 position 值，它们的工作方式也不同。
+ #### （2）z-index
+    属性指定元素的堆栈顺序（哪个元素应放置在其他元素的前面或后面）。
+    元素可以设置正或负的堆叠顺序：
+    具有较高堆叠顺序的元素始终位于具有较低堆叠顺序的元素之前。
+    注意：如果两个定位的元素重叠而未指定 z-index，则位于 HTML 代码中最后的元素将显示在顶部。
+### 3.溢出
+    overflow 属性控制对太大而区域无法容纳的内容的处理方式 是剪裁内容还是添加滚动条
+
+    overflow 属性可设置以下值：
+    visible - 默认。溢出没有被剪裁。内容在元素框外渲染
+    hidden - 溢出被剪裁，其余内容将不可见
+    scroll - 溢出被剪裁，同时添加滚动条以查看其余内容
+    auto - 与 scroll 类似，但仅在必要时添加滚动条
+
+    overflow-x 和 overflow-y 属性规定是仅水平还是垂直地（或同时）更改内容的溢出
+### 4.浮动
+#### （1）CSS float 属性规定元素如何浮动。
+    
+    float 属性可以设置以下值之一：
+    left - 元素浮动到其容器的左侧
+    right - 元素浮动在其容器的右侧
+    none - 元素不会浮动（将显示在文本中刚出现的位置）。默认值。
+    inherit - 元素继承其父级的 float 值
+#### （2）CSS clear 属性规定哪些元素可以在清除的元素旁边以及在哪一侧浮动。
+    clear 属性可设置以下值之一：
+    none - 允许两侧都有浮动元素。默认值
+    left - 左侧不允许浮动元素
+    right- 右侧不允许浮动元素
+    both - 左侧或右侧均不允许浮动元素
+    inherit - 元素继承其父级的 clear 值
+#### （3）overflow: auto
+    如果一个元素比包含它的元素高，并且它是浮动的，它将“溢出”到其容器之外：
+    然后我们可以向包含元素添加 overflow: auto;，来解决此问题：
+#### （4）清除浮动
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+#### (5)导航菜单示例[示例](css-code/浮动/001-导航栏.html)
+### 5.对齐
+#### （1）使块元素（例如 <div> ）水平居中，
+    margin: auto
+    设置元素的宽度将防止其延伸到容器的边缘。（如果未设置 width 属性（或将其设置为 100％），则居中对齐无效。）
+    然后，元素将占用指定的宽度，剩余空间将在两个外边距之间平均分配：
+    如：
+    .center {
+        margin: auto;
+        width: 50%;
+        border: 3px solid green;
+        padding: 20px;
+    }
+#### （2）水平居中对齐文本
+    text-align: center;
+    这段文本是居中的。
+#### （4）居中对齐图像
+    将左右外边距设置为 auto，并将其设置为块元素：
+    如：img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+#### (5)左和右对齐 
+##### position: absolute; :
+    如：
+    .right {
+        position: absolute;
+        right: 0px;
+        width: 300px;
+        border: 3px solid #73AD21;
+        padding: 20px;
+    }
+    绝对定位的元素将从正常流中删除，并可能出现元素重叠。
+##### float
+    .right {
+        float: right;
+        width: 300px;
+        border: 3px solid #73AD21;
+        padding: 10px;
+    }
+#### （6）垂直对齐
+    使用padding 使上下内边距相等
+    .center {
+        padding: 70px 0;
+        border: 3px solid green;
+    }
+#### （7）垂直和水平居中文本
+##### padding 和 text-align: center;
+     .center {
+        padding: 70px 0;
+        border: 3px solid green;
+        text-align: center;
+    }
+##### 使用其值等于 height 属性值的 line-height 属性
+    .center {
+        line-height: 200px;
+        height: 200px;
+        border: 3px solid green;
+        text-align: center;
+    }
+
+    /* 如果有多行文本，请添加如下代码：*/
+    .center p {
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+    }
+##### 使用 position 和 transform 属性
+    .center { 
+        height: 200px;
+        position: relative;
+        border: 3px solid green; 
+    }
+
+    .center p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+##### 同时将 justify-content 和 align-items 属性设置为 center 的容器将使项目在中心（在两个轴上）对齐。
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        border: 3px solid green; 
+    }
+### 6.css 组合器
+    CSS 中有四种不同的组合器：
+    后代选择器 (空格)    div p	选择 <div> 元素内的所有 <p> 元素。
+    子选择器 (>)    div > p	选择其父元素是 <div> 元素的所有 <p> 元素。
+    相邻兄弟选择器 (+)  div + p	选择所有紧随 <div> 元素之后的 <p> 元素。
+    通用兄弟选择器 (~)  p ~ ul	选择前面有 <p> 元素的每个 <ul> 元素
+
+#### （1）后代选择器 (空格)
+    下面的例子选择 <div> 元素内的所有 <p> 元素：
+    实例
+    div p {
+    background-color: yellow;
+    }
+#### （2）子选择器 (>)
+    下面的例子选择属于 <div> 元素子元素的所有 <p> 元素：
+    div > p {
+    background-color: yellow;
+    }
+#### （3）相邻兄弟选择器
+    匹配所有作为指定元素的相邻同级的元素。
+    兄弟（同级）元素必须具有相同的父元素，“相邻”的意思是“紧随其后”。
+    下面的例子选择紧随 <div> 元素之后的所有 <p> 元素：
+    div + p {
+    background-color: yellow;
+    }
+#### （4）通用兄弟选择器
+    匹配属于指定元素的同级元素的所有元素。
+    下面的例子选择属于 <div> 元素的同级元素的所有 <p> 元素：
+    实例
+    div ~ p {
+    background-color: yellow;
+    }
+### 7.伪元素
+ [伪类与微元素参考](https://www.w3school.com.cn/css/css_pseudo_classes.asp)
+#### 简介
+    CSS 伪元素用于设置元素指定部分的样式。
+    例如，它可用于：
+    设置元素的首字母、首行的样式
+    在元素的内容之前或之后插入内容
+#### 所有 CSS 伪元素
+     选择器	例子	例子描述
+    ::after	p::after	在每个 <p> 元素之后插入内容。
+    ::before	p::before	在每个 <p> 元素之前插入内容。 content:url()
+    ::first-letter	p::first-letter	选择每个 <p> 元素的首字母。 只适用于块级元素。
+    ::first-line	p::first-line	选择每个 <p> 元素的首行。只能应用于块级元素。
+    ::selection 	p::selection	选择用户选择的元素部分。
+### 8.CSS 不透明度 / 透明度
+    opacity 属性指定元素的不透明度/透明度。opacity 属性的取值范围为 0.0-1.0。值越低，越透明：
+
+    使用 opacity 属性为元素的背景添加透明度时，子元素都继承相同的透明度。使完全透明的元素内的文本难以阅读
+    解决方案：使用RGBA设置背景色， 
+    rgba(red, green, blue, alpha。
+    alpha 参数是介于 0.0（完全透明）和 1.0（完全不透明）之间的数字。
+### 9.导航栏
+#### （1）垂直导航栏 [垂直导航栏](css-code/导航栏/001-垂直导航栏.html)
+#### (2)水平导航栏 [水平导航栏](css-code/导航栏/001-水平导航栏.html)
+    行内列表项
+    构建水平导航栏的一种方法是，除了上一章中的“标准”代码外，还要将 <li> 元素指定为 inline：
