@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,body{
+            height: 100%;
+            background: url(https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wEaO?ver=0641);
+        }
+        h1{
+            text-align: center;
+            padding-top: 200px;
+
+        }
+       div{
+        width: 300px;
+           margin: auto;
+        }
+        .kuang {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        .kuang:hover {
+            border: 1px solid rgb(63, 62, 62);
+            background-color: rgb(241, 239, 239);
+        }
+        select:hover {
+            border: 1px solid rgb(63, 62, 62);
+        }
+
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>登陆</h1>
+
+    <div>
+        <form action="">
+            <label for="fname">用户名</label><br>
+            <input type="text" id="fname" name="firstname" class="kuang" placeholder="请输入账号"><br>
+            <label for="lname">密码</label><br>
+            <input type="password" id="lname" name="lastname" class="kuang" placeholder="请输入密码"><br>
+            <label for="country">城市</label><br>
+            <select id="country" name="country" class="kuang">
+                <option value="australia">Australia</option>
+                <option value="canada">China</option>
+                <option value="usa">USA</option>
+            </select>
+            <input type="submit" value="提交">
+        </form>
+    </div>
+</body>
+
+</html>
