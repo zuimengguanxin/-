@@ -934,28 +934,7 @@ CSS 节省了大量工作。它可以同时控制多张网页的布局外部样�
     h2::before {
         counter-increment: section;
          content: "第" counter(section) "个: " ;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 ### 11.display grid布局
 [实例](css-code/布局/001-grid布局.html)
 
