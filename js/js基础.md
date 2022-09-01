@@ -871,16 +871,22 @@
         var answer="It's alright";
         var answer="He is called 'Johnny'";
         var answer='He is called "Johnny"';
- ##### 字符串方法
+##### 字符串方法
     1.length
         可返回字符串的长度：
-    2.indexOf() 
-        返回字符串中指定文本首次出现的索引（位置），未找到返回-1
-    3.lastIndexOf() 方法返回指定文本在字符串中最后一次出现的索引，未找到返回-1
+    2.indexOf(searchvalue,start) 
+        返回字符串中指定文本首次出现的索引（位置），未找到返回-1  不能采用强大的搜索值（正则表达式）。
+    3.lastIndexOf(searchvalue,start) 方法返回指定文本在字符串中最后一次出现的索引，未找到返回-1
+    4.startsWith(searchvalue,start) 如果字符串以指定值开头，则 返回 true   区分大小写
+    5.endsWith(searchvalue, length)如果字符串以指定值结尾，则 返回 true
+    6.search()    在字符串中搜索指定值并返回匹配的位置：不能接受第二个起始位置参数,支持正则
+    7.match()   根据正则表达式在字符串中搜索匹配项,并将匹配项作为 Array 对象返回。
+    8.includes()如果字符串包含指定值，includes() 方法返回 true。
+##### 模板字面量
+    1.模板字面量提供了一种将变量和表达式插入字符串的简单方法
+    ${...}
+    2.
 
-实例
-var str = "The full name of China is the People's Republic of China.";
-var pos = str.indexOf("China");
 ##### 转义字符
     \
     \b	退格键
@@ -898,6 +904,25 @@ var pos = str.indexOf("China");
         实例
         var y=123e5;      // 12300000
         var z=123e-5;     // 0.00123
+##### 精度
+    整数（不使用指数或科学计数法）会被精确到 15 位。
+    小数的最大数是 17 位，但是浮点的算数并不总是 100% 精准： 使用乘除法有助于解决上面的问题：
+##### 字字符串
+    在所有数字运算中，JavaScript 会尝试将字符串转换为数字：   *    /    -  加法不会
+##### NaN
+     非数字
+     isNaN()     确定某个值是否是数    返回布尔
+##### 数字方法
+    toString() 以字符串返回数值
+    toExponential(a) 返回字符串值，它包含已被四舍五入并使用指数计数法的数字 参数定义小数点后的字符数
+    toFixed() 返回字符串值，它包含了指定位数小数的数字 参数定义小数点后的字符数
+    toPrecision() 返回字符串值，它包含了指定长度的数字,参数定义总共字符数
+    valueOf() 以数值返回数值：
+
+    这三种 JavaScript 方法可用于将变量转换为数字：
+    Number(a)	返回数字，由其参数转换而来。
+    parseFloat(a)	解析其参数并返回浮点数。
+    parseInt(a)	解析其参数并返回整数。
 
 #### （5）JavaScript 布尔 (Boolean)
     布尔（逻辑）只能有两个值：true 或 false。
@@ -1144,3 +1169,190 @@ var pos = str.indexOf("China");
     onmouseout	用户把鼠标移开 HTML 元素
     onkeydown	用户按下键盘按键
     onload	    浏览器已经完成页面加载
+
+### 12.JavaScript 数组
+    JavaScript 数组用于在单一变量中存储多个值。
+#### (1) 创建数组
+##### 使用数组文本是创建 JavaScript 数组最简单的方法。
+    语法：
+    var array-name = [item1, item2, ...];
+    注意：   空格和折行并不重要。声明可横跨多行：
+            不要最后一个元素之后写逗号（比如 "BMW",）。
+            可能存在跨浏览器兼容性问题。
+    
+
+##### 使用 JavaScript 关键词 new
+    下面的例子也会创建数组，并为其赋值：
+    实例
+    var cars = new Array("Saab", "Volvo", "BMW");
+    以上两个例子效果完全一样。无需使用 new Array()。
+
+    出于简洁、可读性和执行速度的考虑，请使用第一种方法（数组文本方法）。
+
+#### （2）访问数组元素
+    我们通过引用索引号（下标号）来引用某个数组元素。
+##### 这条语句访问 cars 中的首个元素的值：
+        var name = cars[0];
+    注意：[0] 是数组中的第一个元素。[1] 是第二个。数组索引从 0 开始。
+
+##### 改变数组元素
+    这条语句修改了 cars 中第一个元素的值：
+    cars[0] = "Opel";
+
+#### （3）访问完整数组
+    通过 JavaScript，可通过引用数组名来访问完整数组：
+    实例
+    var cars = ["Saab", "Volvo", "BMW"];
+    document.getElementById("demo").innerHTML = cars; 
+
+#### （4）数组是对象
+    数组是一种特殊类型的对象。在 JavaScript 中对数组使用 typeof 运算符会返回 "object"。
+    但是，JavaScript 数组最好以数组来描述。
+##### 对象使用名称来访问其“成员”。在本例中，person.firstName 返回 Bill：
+    对象：
+        var person = {firstName:"Bill", lastName:"Gates", age:19};
+
+##### 数组元素可以是对象
+        JavaScript 变量可以是对象。数组是特殊类型的对象。
+        正因如此，您可以在相同数组中存放不同类型的变量。
+        您可以在数组保存对象。您可以在数组中保存函数。你甚至可以在数组中保存数组：
+
+        myArray[0] = Date.now;
+        myArray[1] = myFunction;
+        myArray[2] = myCars;
+#### （5）数组属性和方法
+
+    1.length 属性返回元素的数量
+    2。sort() 方法对数组进行排序
+    把数组转换为字符串
+        toString() 把数组转换为数组值（逗号分隔）的字符串。
+        join(a) 方法也可将所有数组元素结合为一个字符串。参数为分隔符
+    增减元素
+        既然 JavaScript 数组属于对象，其中的元素就可以使用 JavaScript delete 运算符来删除，使用 delete 会在数组留下未定义的空洞。请使用 pop() 或 shift() 取而代之。
+        pop() 方法从数组中删除最后一个元素 返回“被弹出”的值
+        push() 方法（在数组结尾处）向数组添加一个新的元素 返回新数组的长度
+    位移元素
+        shift() 方法会删除首个数组元素，并把所有其他元素“位移”到更低的索引。返回被“位移出”的字符串
+        unshift() 方法（在开头）向数组添加新元素，并“反向位移”旧元素 返回新数组的长度
+    拼接数组
+        splice(2, 0, "Lemon", "Kiwi") 方法可用于向数组添加新项 返回一个包含已删除项的数组
+    3.访问第一个数组元素
+        实例
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var first = fruits[0];
+        亲自试一试
+    4.访问最后一个数组元素
+        实例
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        var last = fruits[fruits.length - 1];
+
+    5.遍历数组元素
+        ①遍历数组的最安全方法是使用 "for" 循环：
+        实例
+        var fruits, text, fLen, i;
+
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+        text = "<ul>";
+        for (i = 0; i < fLen; i++) {
+            text += "<li>" + fruits[i] + "</li>";
+        } 
+     ②可以使用 Array.foreach() 函数：
+        实例
+        var fruits, text;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        text = "<ul>";
+        fruits.forEach(myFunction);
+        text += "</ul>";
+
+        function myFunction(value) {
+        text += "<li>" + value + "</li>";
+        }
+    6.添加数组元素
+        向数组添加新元素的最佳方法是使用 push() 方法：
+        使用 length 属性向数组添加新元素：
+        实例
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits[fruits.length] = "Lemon";     // 向 fruits 添加一个新元素 (Lemon)
+        添加最高索引的元素可在数组中创建未定义的“洞”：
+        实例
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fruits[6] = "Lemon";                 // 向 fruits 添加一个新元素 (Lemon)
+    
+#### （6） 关联数组
+    很多编程元素支持命名索引的数组。
+    具有命名索引的数组被称为关联数组（或散列）。
+    JavaScript 不支持命名索引的数组。
+    在 JavaScript 中，数组只能使用数字索引。
+
+        实例
+        var person = [];
+        person[0] = "Bill";
+        person[1] = "Gates";
+        person[2] = 62;
+        var x = person.length;          // person.length 返回 3
+        var y = person[0];              // person[0] 返回 "Bill"
+   
+    命名索引，JavaScript 会把数组重定义为标准对象。
+    之后，所有数组的方法和属性将产生非正确结果。
+
+        实例：
+        var person = [];
+        person["firstName"] = "Bill";
+        person["lastName"] = "Gates";
+        person["age"] = 62;
+        var x = person.length;         // person.length 将返回 0
+        var y = person[0];              // person[0] 将返回 undefined
+
+#### （7）数组和对象的区别
+    在 JavaScript 中，数组使用数字索引。
+    在 JavaScript 中，对象使用命名索引。
+    数组是特殊类型的对象，具有数字索引。
+
+##### 何时使用数组，何时使用对象？
+        JavaScript 不支持关联数组
+        如果希望元素名为字符串（文本）则应该使用对象。
+        如果希望元素名为数字则应该使用数组。
+        避免 new Array()
+        没有必要使用 JavaScript 的内建数组构造器 new Array()。
+        请使用 [] 取而代之！
+
+    下面两条不同的语句创建了名为 points 的新的空数组：
+
+    var points = new Array();         // 差
+    var points = [];                  // 优
+    new 关键词只会使代码复杂化。它还会产生某些不可预期的结果：
+
+    var points = new Array(40);       // 创建包含 40 个未定义元素的数组！！！
+
+##### 如何识别数组
+    常见的问题是：我如何知晓某个变量是否是数组？
+        问题在于 JavaScript 运算符 typeof 返回 "object"：
+
+        var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+        typeof fruits;             // 返回 object
+        typeof 运算符返回 "object"，因为 JavaScript 数组属于对象。
+
+    解决方案 1：
+        为了解决这个问题，ECMAScript 5 定义了新方法 Array.isArray()：
+        Array.isArray(fruits);     // 返回 true
+        此方案的问题在于 ECMAScript 5 不支持老的浏览器。
+
+    解决方案 2：
+        创建您自己的 isArray() 函数以解决此问题：
+
+        function isArray(x) {
+            return x.constructor.toString().indexOf("Array") > -1;
+        }
+    假如参数为数组，则上面的函数始终返回 true。
+    或者更准确的解释是：假如对象原型包含单词 "Array" 则返回 true。
+
+    解决方案 3：
+    假如对象由给定的构造器创建，则 instanceof 运算符返回 true：
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    
+    fruits instanceof Array     // 返回 true
+
