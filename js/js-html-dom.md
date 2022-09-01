@@ -159,51 +159,44 @@
 
 
 ## JavaScript HTML DOM - 改变 HTML
-    DOM 元素
-    DOM 表单
     HTML DOM 允许 JavaScript 改变 HTML 元素的内容。
 
-    改变 HTML 输出流
+### 改变 HTML 输出流
     JavaScript 能够创建动态 HTML 内容：
 
     Thu Sep 01 2022 15:54:30 GMT+0800 (中国标准时间)
     在 JavaScript 中，document.write() 可用于直接写入 HTML 输出流：
 
-    实例
-    <!DOCTYPE html>
-    <html>
-    <body>
+        实例
+        <!DOCTYPE html>
+        <html>
+        <body>
 
-    <script>
-    document.write(Date());
-    </script>
+        <script>
+            document.write(Date());
+        </script>
 
-    </body>
-    </html>
-    亲自试一试
+        </body>
+        </html>
     千万不要在文档加载后使用 document.write()。这么做会覆盖文档。
 
-    改变 HTML 内容
+### 改变 HTML 内容
     修改 HTML 文档内容最简单的方法是，使用 innerHTML 属性。
-
     如需修改 HTML 元素的内容，请使用此语法：
-
-    document.getElementById(id).innerHTML = new text
+        document.getElementById(id).innerHTML = new text
     本例修改了 <p> 元素的内容：
-
     实例
-    <html>
-    <body>
+        <html>
+        <body>
 
-    <p id="p1">Hello World!</p>
+        <p id="p1">Hello World!</p>
 
-    <script>
-    document.getElementById("p1").innerHTML = "hello kitty!";
-    </script>
+        <script>
+            document.getElementById("p1").innerHTML = "hello kitty!";
+        </script>
 
-    </body>
-    </html>
-    亲自试一试
+        </body>
+        </html>
     例子解释：
     上面的 HTML 文档包含 id="p1" 的 <p> 元素
     我们使用 HTML DOM 来获取 id="p1" 的这个元素
