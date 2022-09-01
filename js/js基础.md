@@ -860,18 +860,35 @@
 
 
  #### (2)JavaScript 字符串 (String)
-    字符串是存储字符（比如 "Bill Gates"）的变量。
-    字符串可以是引号中的任意文本。您可以使用单引号或双引号：
+##### 字符串是存储字符（比如 "Bill Gates"）的变量。
+##### 字符串可以是引号中的任意文本。可以使用单引号或双引号：
         实例
         var carname="Volvo XC60";
         var carname='Volvo XC60';
-    您可以在字符串中使用引号，只要不匹配包围字符串的引号即可：
+##### 可以在字符串中使用引号，只要不匹配包围字符串的引号即可：
 
         实例
         var answer="It's alright";
         var answer="He is called 'Johnny'";
         var answer='He is called "Johnny"';
+ ##### 字符串方法
+    1.length
+        可返回字符串的长度：
+    2.indexOf() 
+        返回字符串中指定文本首次出现的索引（位置），未找到返回-1
+    3.lastIndexOf() 方法返回指定文本在字符串中最后一次出现的索引，未找到返回-1
 
+实例
+var str = "The full name of China is the People's Republic of China.";
+var pos = str.indexOf("China");
+##### 转义字符
+    \
+    \b	退格键
+    \f	换页
+    \n	新行
+    \r	回车
+    \t	水平制表符
+    \v	垂直制表符
  #### (4)JavaScript 数字 (Nunber)
     JavaScript 只有一种数字类型。数字可以带小数点，也可以不带：
         实例
@@ -1002,6 +1019,8 @@
     如果使用 fullName 属性，不添加 (), 它会返回函数的定义：
 #### （7）this 关键词
     在函数定义中，this 引用该函数的“拥有者”。
+#### (8)请注意 (x==y) 与 (x===y) 的区别。
+    JavaScript 对象无法进行对比，比较两个 JavaScript 将始终返回 false。
 ### 10.JavaScript 函数
     JavaScript 函数是被设计为执行特定任务的代码块。
     JavaScript 函数会在某代码调用它时被执行。
