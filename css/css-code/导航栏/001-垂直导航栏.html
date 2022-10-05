@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        list-style-type: none;
+        height: 100%;
+        width: 200px;
+        background-color: #f1f1f1;
+        border: 1px solid #000;
+        position: fixed;
+        overflow: auto;
+        box-sizing: border-box;
+    }
+
+    li {
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    li:last-child {
+        border-bottom: none;
+    }
+
+    li a {
+        display: block;
+        text-decoration: none;
+        height: 30px;
+        line-height: 30px;
+        color: #000
+    }
+    li:nth-child(1) a{
+        color: white;
+        background-color: brown;
+    }
+    li a:hover {
+        color: white;
+        background-color: grey;
+    }
+
+    li a:active {
+        color: white;
+        background-color: #4CAF50;
+    }
+    div{
+        width: calc(100%  - 200px);
+        float: right;
+        
+    }
+    div h1, h2{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+    div p{
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+</style>
+
+<body>
+    <ul>
+        <li><a href="#q" >Home q</a></li>
+        <li><a href="#w">News w</a></li>
+        <li><a href="https://www.w3school.com.cn/css/css_navbar_vertical.asp">Contact</a></li>
+        <li><a href="https://www.w3school.com.cn/css/css_navbar_vertical.asp">About</a></li>
+    </ul>
+    <div>
+        <h1>固定的全高垂直导航栏</h1>
+        <h2>请尝试滚动此区域，来查看侧导航栏如何粘在页面上。</h2>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p id="q">qqqqqqqqqqq</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p id="w">wwwwwwwwww</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+        <p>一些文本...</p>
+
+    </div>
+</body>
+
+</html>

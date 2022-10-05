@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="https://www.w3school.com.cn/">
+    <title>Document</title>
+    <style>
+          div#maincontent{
+            /* background:url("https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4wB6h?ver=9a9f")   center center/cover; */
+            background-color: #000;
+        }
+        div#maincontent ul.example-list {
+            list-style-type: none;
+            margin: 15px 0 0 0;
+        }
+      
+        div#maincontent ul.example-list li {
+            margin: auto;
+            margin-top: 15px;
+            padding: 0;
+            border-bottom: 1px solid #ccc;
+            width: 25%; 
+        }
+
+        div#maincontent ul.example-list li:last-child {
+            border-bottom: none;
+        }
+
+        ul.example-list li a {
+            color: #000;
+            border: none;
+            display: block;
+            width: 100%;
+            padding: 10px 20px;
+            background-color: #f1f1f1;
+            box-sizing: border-box;
+            margin: 0;
+            text-align: center;
+        }
+
+        ul.example-list li a:hover {
+            background-color: #ccc;
+        }
+        div{
+            text-align: center;
+            color: white;
+        }
+        #tpn ul{
+            list-style-type: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="maincontent">
+
+        <h1>CSS 实例</h1>
+
+        <div id="tpn ">
+            <ul class="prenext example-list">
+                <li class="pre"><a href="/css/css_grid_item.asp" title="CSS 网格项目">CSS 网格项目</a></li>
+                <li class="next"><a href="/css/css_quiz.asp" title="CSS 测验">CSS 测验</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>CSS 语法</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_1">CSS 语法</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_syntax.asp">实例解释：CSS 语法</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 选择器</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_element">元素选择器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_id">id 选择器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_class">类选择器（针对所有元素）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_element_class_1">类选择器（只针对 &lt;p&gt; 元素）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_element_class_2">引用两个类的 HTML 元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_syntax_universal">通用选择器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grouping">分组选择器</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_selectors.asp">实例解释：CSS 选择器</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 使用</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_howto_external">外部 CSS</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_howto_internal">内部 CSS</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_howto_inline">行内 CSS</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_howto_multiple_1">多个样式表</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_howto_cascade">层叠顺序</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_howto.asp">实例解释：如何添加 CSS</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 注释</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_comments_1">单行注释</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_comments_3">多行注释</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_comments.asp">实例解释：CSS 注释</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 颜色</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_background">设置颜色的背景色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_text">设置文本颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_border">设置边框颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_values">设置不同的颜色值</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_rgb">设置 RGB 值</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_hex">设置 HEX 值</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color_hsl">设置 HSL 值</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_colors.asp">实例解释：CSS 颜色</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 背景</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background-color_body">设置页面的背景色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background-color_elements">设置不同元素的背景色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background-image">把图像设置为页面背景</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background-image_gradient_2">如何只在水平方向重复背景图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background-image_position">如何定位背景图像</a></li>
+                <li><a target="_blank"
+                        href="/tiy/t.asp?f=css_background-image_attachment_1">固定的背景图像（该图像不会随着页面的其余部分滚动）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background_shorthand">所有背景属性在一条声明中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_background_shorthand_2">高级背景实例</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_background.asp">实例解释：背景属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 边框</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-width">设置四条边框的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-top-width">设置上边框的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-bottom-width">设置下边框的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-left-width">设置左边框的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-right-width">设置右边框的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-style">设置四条边框的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-top-style">设置上边框的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-bottom-style">设置下边框的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-left-style">设置左边框的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-right-style">设置右边框的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-color">设置四条边框的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-top-color">设置上边框的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-bottom-color">设置下边框的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-left-color">设置左边框的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-right-color">设置右边框的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border">所有边框属性在一条声明中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border_round">为元素添加圆角</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-style_2">为每个边设置不同的边框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-top">所有上边框属性在一条声明中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-bottom">所有下边框属性在一条声明中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-left">所有左边框属性在一条声明中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_border-right">所有右边框属性在一条声明中</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_border.asp">实例解释：边框属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 外边距</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_sides">为元素的各边规定不同的外边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_shorthand_4value">使用带有四个值的简写 margin 属性</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_shorthand_3value">使用带有三个值的简写 margin 属性</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_shorthand_2value">使用带有两个值的简写 margin 属性</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_shorthand_1value">使用带有一个值的简写 margin 属性</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_auto">把外边距设置 auto，来居中其容器内的元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin-left_inherit">让左外边距继承父元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_margin_collapse">外边距合并</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_margin.asp">实例解释：外边距属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 内边距</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_sides">为元素的各边规定不同的内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_shorthand_4value">使用带有四个值的简写内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_shorthand_3value">使用带有三个值的简写内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_shorthand_2value">使用带有两个值的简写内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_shorthand_1value">使用带有一个值的简写内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_width_1">内边距和元素宽度（不设置 box-sizing）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding_width_2">内边距和元素宽度（设置 box-sizing）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding-left">设置元素的左内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding-right">设置元素的右内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding-top">设置元素的上内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_padding-bottom">设置元素的下内边距</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_padding.asp">实例解释：内边距属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 高度/宽度</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dim_height_width_1">设置元素的高度和宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dim_max_width">设置元素的最大宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dim_height">设置不同元素的高度和宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dim_height_percent">使用百分百来设置图像的高度和宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dim_max-width">设置元素的最小宽度和最大宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dim_max-height">设置元素的最小高度和最大高度</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_dimension.asp">实例解释：定位属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 盒模型</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_boxmodel">演示盒模型</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_boxmodel_width">规定总宽度为 250 像素的元素</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_boxmodel.asp">实例解释：盒模型</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 轮廓</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline_intro">绘制围绕元素的线条（轮廓）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline-style">设置轮廓的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline-color">设置轮廓的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline-color_invert">使用 outline-color：翻转轮廓</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline-width">设置轮廓的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline">使用简写的轮廓属性</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_outline-offset_1">在元素的轮廓与边框之间添加空间</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_outline.asp">实例解释：轮廓属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 文本</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_color">设置不同元素的文本色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text-align">对齐文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text-decoration_link">删除链接下面的线</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text-decoration">修饰文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text-transform">控制文本中的字母大小写</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text-indent">缩进文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_letter-spacing">规定字符间距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_line-height">规定行间距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text_direction">设置元素的文本方向</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text_word-spacing">增加字间距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text-shadow">规定元素的文本阴影</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_text_white-space">在元素内禁用文本换行</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_vertical-align">垂直对齐文本内的图像</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_text.asp">实例解释：文本属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 字体</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-family_1">设置文本的字体</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-size">设置字体的大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-size_px">以 px 为单位设置字体大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-size_em">以 em 为单位设置字体大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-size_percent_em">以百分百和 em 为单位设置字体大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-style">设置字体的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-variant">设置字体的变体</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font-weight">设置字体的粗细</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_font">所有字体属性在一条声明中</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_font.asp">实例解释：字体属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 图标</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_icons_fontawesome">Font Awesome 图标</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_icons_bootstrap">Bootstrap 图标</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_icons_google">Google 图标</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_icons.asp">实例解释：图标</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 链接</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_1">为已访问/未访问链接添加不同的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_decoration">在链接上使用 text-decoration</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_background">为链接规定背景色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_2">为超链接添加其他样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_cursor">不同类型的指针</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_advanced_1">高级 - 创建链接框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_advanced_2">高级 - 创建带边框的链接框</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_link.asp">实例解释：链接属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 列表</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style-type_all">列表中的所有不同的列表项标记</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style-image">把图像设置为列表项标记</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style-position">定位列表项标记</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style_none">删除默认列表设置</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style">所有列表属性在一条声明中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style_colors">用颜色设置列表样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_list-style-border">全宽带边框的列表</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_list.asp">实例解释：列表属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 表格</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_border_1">规定 table、th 以及 td 元素的黑色边框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_border-collapse">使用 border-collapse</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_border_2">围绕表格的单一边框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_width_1">规定表格的宽度和高度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_align">设置内容的水平对齐（text-align）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_vertical-align">设置内容的垂直对齐（vertical-align）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_padding">规定 th 和 td 元素的内边距</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_border_divider">水平分隔符</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_hover">可悬停的表格</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_striped">条状表格</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_color">规定表格边框的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_caption-side">设置表格标题的位置</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_responsive">响应式表格</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_table_fancy">创建美观的表格</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_table.asp">实例解释：表格属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 显示</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_visibility_hidden">如何隐藏元素（visibility:hidden）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_display_none">如何不显示元素（display:none）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_display_inline">如何把块级元素显示为行内元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_display_block">如何把行内元素显示为块级元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_display_js">如何将 CSS 与 JavaScript 一起使用来显示隐藏内容</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_display_visibility.asp">实例解释：display 属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 定位</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_fixed">相对于浏览器窗口来放置元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_relative">相对于元素正常位置来放置元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_absolute">用绝对值定位元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_sticky">粘性定位</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_zindex">重叠元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_clip">设置元素的形状</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_top">使用像素值设置图像的上边缘</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_bottom">使用像素值设置图像的下边缘</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_left">使用像素值设置图像的左边缘</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_position_right">使用像素值设置图像的右边缘</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_top_left">定位图像文本（左上角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_top_right">定位图像文本（右上角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_bottom_left">定位图像文本（左下角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_bottom_right">定位图像文本（右下角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_center">定位图像文本（居中）</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_positioning.asp">实例解释：定位属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 溢出</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_overflow_visible">使用 overflow: visible -
+                        溢出没有被裁剪。它在元素框之外渲染。</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_overflow_hidden">使用 overflow: hidden - 溢出被裁剪，其余内容被隐藏。</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_overflow_scroll">使用 overflow: scroll -
+                        溢出被裁剪，但是添加了滚动条以查看其余内容。</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_overflow_auto">使用 overflow: auto -
+                        如果裁剪了溢出，则应添加滚动条以查看其余内容。</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_overflow_xy">使用 overflow-x 和 overflow-y</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_overflow.asp">实例解释：溢出属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 浮动</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_1">float 属性的简单使用</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_2">带有边框和外边距的图像浮动到段落的右侧</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_3">带标题的图像向右浮动</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_4">让段落的第一个字母向左浮动</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_layout_clear">关闭浮动（使用 clear 属性）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_layout_clearfix_2">关闭浮动（使用 clearfix hack）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_boxes">创建浮动框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_images_side">创建并排图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_boxes_flex">创建等高框（通过 flexbox）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_float_navigation_menu">创建水平菜单</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_layout_cols">创建 web 布局实例</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_float.asp">实例解释：浮动属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS Inline-block</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_inline-block_span">展示行内、行内块、块级元素的区别</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_inline-block_nav">使用 inline-block 来创建导航链接</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_inline-block.asp">实例解释：Inline-block</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 对齐元素</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_container">通过外边距进行居中对齐</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_text">居中对齐文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_image">居中对齐图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_position">通过 position 实现左对齐/右对齐</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_position_crossbrowser">通过 position 实现左对齐/右对齐 -
+                        跨浏览器方案</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_float">通过 float 实现左对齐/右对齐</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_float_crossbrowser">通过 float 实现左对齐/右对齐 - 跨浏览器方案</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_padding_1">通过 padding 垂直居中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_padding_2">垂直和水平居中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_line-height">通过 line-height 垂直居中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_align_transform">通过 position 实现垂直和水平居中</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_align.asp">实例解释：对齐属性</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 组合器</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_element_element">后代选择器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_element_gt">子选择器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_element_plus">相邻同胞选择器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_element_tilde">通用同胞选择器</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_combinators.asp">实例解释：组合器选择器</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 伪类</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_1">给链接添加不同的颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_2">为链接添加其他样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_link_focus">使用 :focus</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_first-child_1">:first-child - 匹配首个 p 元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_first-child_2">:first-child - 匹配所有 p 元素内的首个 i 元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_first-child_3">:first-child - 匹配所有第一个子 p 元素中的所有 i 元素</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_lang">使用 :lang</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_pseudo_classes.asp">实例解释：伪类</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 伪元素</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_firstletter">制作文本中特别的首字母</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_firstline">制作文本中特别的首行</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_firstline_letter">制作特别的首字母和首行</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_before">使用 :before 在元素之前插入内容</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_after">使用 :after 在元素之后插入内容</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_pseudo_elements.asp">实例解释：伪元素</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 内容生成</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_gen_content">在每个带有 content 属性的链接之后的括号中插入 URL</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_gen_counter-reset">用 "Section 1"、"1.1"、"1.2" 等为节和子节编号</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_gen_quotes">用 quotes 属性指定引号</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_counters.asp">实例解释：CSS 计数器</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 不透明度</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_opacity">创建透明图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_transparency_1">创建透明图像 - mouseover 效果</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_transparency_2">透明图像的反转的 mouseover 效果</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_opacity_box_1">透明框（div）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_opacity_box_2">用了 RGBA 值的透明框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_transparency">创建一个文本位于背景图像上的透明框</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_image_transparency.asp">实例解释：图像不透明度</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 导航栏</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_vertical_active">拥有完整样式的垂直导航栏</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_horizontal_float_advanced">拥有完整样式的水平导航栏</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_vertical_fixed">全高的固定垂直导航栏</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_horizontal_black_fixed_1">固定的水平导航栏</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_sticky">粘性导航栏（在 IE 或 Edge 15 及更早版本中不起作用）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_horizontal_responsive">响应式的顶部导航栏</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_navbar_vertical_responsive">响应式的侧边导航栏</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_navbar.asp">实例解释：导航栏</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 下拉列表</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dropdown_text">下拉文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dropdown_button">下拉菜单</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dropdown_right">右对齐的下拉菜单</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dropdown_image">下拉图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_dropdown_navbar">下拉导航栏</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_dropdowns.asp">实例解释：下拉菜单</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 图片库</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_gallery">图片库</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_gallery_responsive">响应式图片库</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_image_gallery.asp">实例解释：图片库</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 图像精灵</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sprites_img">图像精灵</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sprites_nav">图像精灵 - 导航列表</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sprites_hover_nav">有悬停效果的图像精灵</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_image_sprites.asp">实例解释：图像精灵</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 属性选择器</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute">选取带有 target 属性的所有 &lt;a&gt; 元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute_value_1">选取带有 target="_blank" 属性的所有
+                        &lt;a&gt; 元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute_value_2">选取所有带有 title 属性的元素，其中 title
+                        属性包含以空格分隔的单词列表，单词之一是 "flower"</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute_hyphen">选取所有带有以 "top" 开头的 class
+                        属性值的元素（必须是整个单词）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute_start">选取所有带有以 "top" 开头的 class
+                        属性值的元素（一定不能是整个单词）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute_end">选取所有带有以 "test" 结尾的 class 属性值的元素</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_sel_attribute_contain">选择带有包含 "te" 的 class 属性值的所有元素</a>
+                </li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_attribute_selectors.asp">实例解释：属性选择器</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 表单</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_width">全宽的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_padding">填充的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_border_1">带边框的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_border_2">带下边框的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_color">带颜色的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_focus_1">获得焦点的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_focus_2">获得焦点的输入字段 2</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_icon">带图标的输入字段</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_search_animated">有动画效果的搜索框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_textarea">设置文本框的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_select">设置选择菜单的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_button">设置按钮的样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_form_responsive">响应式表单</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_form.asp">实例解释：表单</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 计数器</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_counters_1">创建计数器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_counters_2">嵌套计数器 1</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_counters_3">嵌套计数器 2</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_counters.asp">实例解释：计数器</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 网站布局</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_website_layout_footer">简单的响应式网站布局</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_website_layout_blog">一个网站的实例</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_website_layout.asp">实例解释：网站布局</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 圆角</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_border-radius_1">为元素添加圆角</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_border-radius_2">单独设置每个圆角</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_border-radius_3">创建椭圆角</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_borders.asp">实例解释：CSS 圆角边框</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 边框图像</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_border-image_1">创建围绕元素的图像边框，使用 round 关键字</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_border-image_2">创建围绕元素的图像边框，使用 stretch 关键字</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_border-image_3">图像边框 - 不同的 slice 边框</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_border_images.asp">实例解释：CSS 边框图像</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 背景</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background_multiple_1">为元素添加多个背景图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background-size">规定背景图像的大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background-size_contain">使用 "contain" 和 "cover"
+                        缩放背景图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background_multiple_3">定义背景图像的大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background_full">全尺寸的背景图像（完全覆盖内容区域）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background-origin">使用 background-origin 来规定放置背景图像的位置</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_background-clip">使用 background-clip 来规定背景的绘制区域</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_backgrounds.asp">实例解释：CSS 背景</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 渐变</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear">线性渐变 - 从上到下</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_ltr">线性渐变 - 从左到右</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_diagonal">线性渐变 - 对角线</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_angles">线性渐变 - 特定角度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_color_stops">线性渐变 - 多个色标</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_rainbow">线性渐变 - 彩虹色 + 文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_transparency">线性渐变 - 透明度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-linear_repeating">线性渐变 - 重复的线性渐变</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-radial_1">径向渐变 - 均匀分布的色标</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-radial_2">径向渐变 - 间距不同的色标</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-radial_shape">径向渐变 - 设置形状</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-radial_size">径向渐变 - 不同的尺寸关键字</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_gradient-radial_repeating">径向渐变 - 重复的径向渐变</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_gradients.asp">实例解释：CSS 渐变</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 阴影效果</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_1">简单的阴影效果</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_2">向阴影添加颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_3">向阴影添加模糊效果</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_4">带黑色阴影的白色文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_5">红色霓虹灯发光阴影</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_6">红色和蓝色霓虹灯发光阴影</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-shadow_7">黑色、蓝色和深蓝色阴影的白色文本</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-shadow_1">向元素添加简单的 box-shadow</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-shadow_2">向 box-shadow 添加颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-shadow_3">向 box-shadow 添加颜色和模糊效果</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-shadow_4">创建类似纸质卡片（文本）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-shadow_5">创建类似纸质卡片（宝丽来图像）</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_shadows.asp">实例解释：CSS 阴影效果</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 文本效果</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-overflow">指定应如何向用户呈现未显示的溢出内容</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_text-overflow_hover">将鼠标悬停在元素上时如何显示溢出的内容</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_word-wrap">允许长文字能够被折断并换到下一行</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_word-break">规定换行规则</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_writing-mode">规定文本的书写模式（横着写还是竖着写）</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_text_effects.asp">实例解释：CSS 文本</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS Web 字体</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_font-face_rule">在 @font-face 规则中使用您自己的字体</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_font-face_rule_bold">在 @font-face 规则中使用您自己的字体（粗体）</a>
+                </li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_fonts.asp">实例解释：CSS web 字体</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 2D 转换</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_translate">translate() - 从当前位置删除元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_rotate_1">rotate() - 顺时针旋转元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_rotate_2">rotate() - 逆时针旋转元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_scale_1">scale() - 增加元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_scale_2">scale() - 减少元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_skewx">skewX() - 沿 X 轴倾斜元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_skewy">skewY() - 沿 Y 轴倾斜元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_skew_1">skew() - 沿 X 和 Y 轴倾斜元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_matrix">matrix() - 旋转、缩放、移动和倾斜元素</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_2dtransforms.asp">实例解释：CSS 2D 转换</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 3D 转换</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_rotateX">rotateX() - 将元素绕其 X 轴旋转给定角度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_rotateY">rotateY() - 将元素绕其 Y 轴旋转给定角度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transform_rotateZ">rotateZ() - 将元素绕其 Z 轴旋转给定角度</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_3dtransforms.asp">实例解释：CSS 3D 转换</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 过渡</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transition_1">过渡 - 更改元素的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transition_2">过渡 - 更改元素的宽度和高度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transition_speed">为过渡规定不同的速度曲线</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transition_delay">为过渡效果规定延迟</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transition_transform">向过渡效果添加变换</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_transition_4">在一条简写属性中规定所有过渡属性</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_transitions.asp">实例解释：CSS 过渡</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 动画</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_1">把动画绑定到一个元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_2">动画 - 改变一个元素的背景色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_3">动画 - 改变一个元素的背景色和位置</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_delay_1">延迟动画</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_count_1">在动画停止前运行三次</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_count_2">永远运行动画</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_direction_1">从反方向运行动画</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_direction_2">交替运行动画</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_speed">动画的速度曲线</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_animation_5">动画的简写属性</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_animations.asp">实例解释：CSS 动画</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 工具提示</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_tooltip_right">右侧工具提示</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_tooltip_left">左侧工具提示</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_tooltip_top">顶部工具提示</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_tooltip_bottom">底部工具提示</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_tooltip_arrow_bottom">带箭头的工具提示</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_tooltip_transition">有动画效果的工具提示</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_tooltip.asp">实例解释：工具提示</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 样式图像</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_images_round">圆角图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_images_circle">圆形图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_images_thumbnail">缩略图</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_images_thumbnail_link">作为链接的缩略图</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_images_responsive">响应式图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_top_left">图像文本（左上角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_top_right">图像文本（右上角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_bottom_left">图像文本（左下角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_bottom_right">图像文本（右上角）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_text_center">图像文本（居中）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_images_card">宝丽来图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_filter_grayscale">灰度图像滤镜</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_image_modal_js">高级 - 通过 CSS 和 JavaScript 实现的图像模态</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_images.asp">实例解释：CSS 图像</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS Object-fit</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_object-fit_2">剪裁图像的两边，保留长宽比，然后填充空间</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_object-fit_all">所有 object-fit 属性值的例子</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_object-fit.asp">实例解释：Object-fit</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 按钮</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_basic">基础的 CSS 按钮</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_color">按钮颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_font">按钮尺寸</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_round">圆角按钮</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_border">带颜色的按钮边框</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_hover">可悬停的按钮</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_shadow">带阴影的按钮</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_disabled">被禁用的按钮</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_width">按钮宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_group">按钮分组</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_group_border">带边框的按钮分组
+                    </a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_animate_1">带动画的按钮（悬停效果）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_animate_2">带动画的按钮（按键效果）</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_buttons_animate_3">带动画的按钮（涟漪效果）</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_buttons.asp">实例解释：CSS 按钮</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 分页</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination">简单的分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_active">活动的、可悬停的分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_active_round">带圆角的活动可悬停分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_transition">可悬停的过渡效果</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_border">带边框的分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_border_round">圆角带边框的分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_margin">链接之间隔着空白的分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_size">分页的大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_center">居中的分页</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_ex_pagination_breadcrumbs">面包屑</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_pagination.asp">实例解释：CSS 分页</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 多列</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-count">创建多列</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-gap">规定列之间的间隙</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-rule-style">规定列之间的规则样式</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-rule-width">规定列之间的规则宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-rule-color">规定列之间的规则颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-rule">规定列之间的规则的宽度、样式和颜色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-span">规定元素应该横跨多少列</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_column-width">为列规定建议的最佳宽度</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_multiple_columns.asp">实例解释：CSS 多列</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 用户界面</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_resize_width">允许用户调整元素的宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_resize_height">允许用户调整元素的高度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_resize">允许用户同时调整元素的宽度和高度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_outline-offset">在元素轮廓与边框之间添加空间</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_user_interface.asp">实例解释：CSS 用户界面</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 变量</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_var_1">使用 var() 函数</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_var_2">使用 var() 函数来插入若干自定义的属性值</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_variables.asp">实例解释：CSS 变量</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS Box Sizing</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-sizing_old">不设置 box-sizing 的元素宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-sizing_new">设置 box-sizing 的元素宽度</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_box-sizing_all">表单元素 + box-sizing</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_variables.asp">实例解释：CSS box sizing</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 弹性盒</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_flexline">带有三个弹性项目的弹性盒</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_flexline_rtl">带有三个弹性项目的弹性盒 - rtl 方向</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_direction_row-reverse">flex-direction -
+                        row-reverse</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_direction_column">flex-direction - column</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_direction_column-reverse">flex-direction -
+                        column-reverse</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_justify_flex-end">justify-content - flex-end</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_justify_center">justify-content - center</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_justify_space-between">justify-content -
+                        space-between</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_justify_space-around">justify-content -
+                        space-around</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align_stretch">align-items - stretch</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align_flex-start">align-items - flex-start</a>
+                </li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align_flex-end">align-items - flex-end</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align_center">align-items - center</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align_baseline">align-items - baseline</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_nowrap">flex-wrap - nowrap</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_wrap">flex-wrap - wrap</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_wrap-reverse">flex-wrap - wrap-reverse</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align-content">align-content - center</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_order">弹性项目排序</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_margin_1">Margin-right:auto;</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_margin_2">Margin:auto; = 完美的居中</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_align-self">在弹性项目上设置 align-self</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_flex_number">规定弹性项目的长度，相对于弹性项目的其余部分</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_image_gallery">用弹性盒创建响应式的图片库</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_flexbox_website">用弹性盒创建响应式网站</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_flexbox.asp">实例解释：CSS flexbox</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 媒体查询</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_media_queries_1">如果视口宽度为 480 像素或更宽，则将背景色改为浅绿色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css3_media_queries_2">如果视口宽度为 480 像素或更宽，显示一个浮动到页面左侧的菜单</a>
+                </li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_mediaqueries.asp">实例解释：CSS 媒体查询</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 媒体查询 - 更多实例</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_ex_1">根据屏幕宽度设置不同的背景色</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_navbar">响应式的导航菜单</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_ex_2">使用浮动的响应式列</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_flex">使用弹性盒的响应式列</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_hide">通过媒体查询隐藏元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_fontsize">响应式字体大小</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_img_gallery">响应式图片库</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_website">响应式网站</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_mediaquery_orientation">根据浏览器方向改变页面布局</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_mediaqueries_minmax_1">最小宽度到最大宽度</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css3_mediaqueries_ex.asp">实例解释：CSS 媒体查询实例</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 响应式 Web 设计</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_styles">响应式网格视图</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_col-s">为台式机、笔电和手机添加断点</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_mediaquery_breakpoints">典型的断点</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_image_1">响应式图像</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_video_1">响应式视频</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_w3css">响应式框架：W3.CSS</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=responsive_bootstrap">响应式框架：Bootstrap</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_rwd_intro.asp">实例解释：CSS 响应式 Web 设计</a></p>
+        </div>
+
+
+
+        <div>
+            <h2>CSS 网格</h2>
+
+            <ul class="example-list">
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grid_layout_named">网格布局</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grid">网格元素</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grid_grid-column-gap">网格列间隙</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grid_lines_1">网格行</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grid_container">网格容器</a></li>
+                <li><a target="_blank" href="/tiy/t.asp?f=css_grid_item">网格项目</a></li>
+            </ul>
+
+            <p><a class="btn-blue" href="/css/css_grid.asp">实例解释：CSS 网格</a></p>
+        </div>
+
+
+
+        <div id="bpn">
+            <ul class="prenext">
+                <li class="pre"><a href="/css/css_grid_item.asp" title="CSS 网格项目">CSS 网格项目</a></li>
+                <li class="next"><a href="/css/css_quiz.asp" title="CSS 测验">CSS 测验</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

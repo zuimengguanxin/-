@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    1.使用 embed 标签
+        embed 标签的作用是在 HTML 页面中嵌入多媒体元素。
+        下面的 HTML 代码显示嵌入网页的 Flash 视频：
+        <embed src="movie.swf" height="200" width="200"/>
+    2.使用 object> 标签
+        object标签的作用是在 HTML 页面中嵌入多媒体元素。
+        下面的 HTML 片段显示嵌入网页的一段 Flash 视频：
+        <object data="movie.swf" height="200" width="200"/>
+
+    3.使用 video 标签
+        video 是 HTML 5 中的新标签。
+        video 标签的作用是在 HTML 页面中嵌入视频元素。
+        以下 HTML 片段会显示一段嵌入网页的 ogg、mp4 或 webm 格式的视频：
+        <video width="320" height="240" controls="controls">
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <source src="movie.webm" type="video/webm" />
+        Your browser does not support the video tag.
+        </video>
+        您必须把视频转换为很多不同的格式。
+        video 元素在老式浏览器中无效。
+        video 元素无法通过 HTML 4 和 XHTML 验证。
+    4.最好的 HTML 解决方法
+        HTML 5 + object + embed
+        <video width="320" height="240" controls="controls">
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <source src="movie.webm" type="video/webm" />
+          <object data="movie.mp4" width="320" height="240">
+            <embed src="movie.swf" width="320" height="240" />
+          </object>
+        </video>
+        上例中使用了 4 中不同的视频格式。HTML 5 video 元素会尝试播放以 mp4、ogg 或 webm 格式中的一种来播放视频。如果均失败，则回退到 embed 元素。
+</body>
+</html>

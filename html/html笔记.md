@@ -401,7 +401,8 @@
     XHTML5	2013       
 
 ## html进阶
-### 1.表单[见表单 001-表单.html](html-code/表单/001-表单.html)[见表单 002-表单元素.html](html-code/表单/002-表单元素.html)
+### 1.表单 
+[见表单 001-表单.html](html-code/表单/001-表单.html)[见表单 002-表单元素.html](html-code/表单/002-表单元素.html)
 #### （1）主要标签
     <form>	定义一个表单。
         <input>	定义一个输入框。
@@ -428,10 +429,26 @@
     target  值   
         _blank 新窗口 _self 当前窗口  _parent 父框架 _top body中 frameName iframe中
 #### （3）input属性
-##### 主要属性
+##### 主要属性  
     type	规定输入框的类型。
-    submit	定义提交按钮（提交表单）
-    list    定义下拉列表输入，必须引用 <datalist> 标签的id属性
+    list    定义下拉列表输入，必须引用 <datalist> 标签的id属性 
+[见表单 005-list_datalist.html](html-code/表单/005-list_datalist.html)
+
+    autofocus	规定输入框自动获得焦点。
+    autocomplete	规定浏览器应该自动完成表单（默认：开启）。
+   formaction	用以向 action URL 发送表单数据的地址（URL）。覆盖form action属性。
+ [见表单 004-两个提交按钮.html](html-code/表单/004-两个提交按钮.html) 
+
+     placeholder	规定输入框的默认提示信息。
+     multiple	    规定输入框可以选择多个值。   
+     min            规定输入框的最小值。
+     max            规定输入框的最大值。 
+     formtarget    规定向何处提交表单的地址（URL）。 覆盖form target属性。
+        _blank 新窗口 _self 当前窗口  _parent 父框架 _top body中 frameName iframe中
+    formnovalidate	规定浏览器不验证表单。覆盖form novalidate属性。
+    formmethod	用以向 action URL 发送表单数据（form-data）的 HTTP 方法。覆盖form method属性。
+    formenctype	用以向 action URL 发送表单数据的编码方式（仅针对 method="post" 的表单）。覆盖form enctype属性。
+    
 ##### 输入限制属性
     disabled	规定输入字段应该被禁用。
     max	规定输入字段的最大值。
@@ -443,6 +460,10 @@
     size	规定输入字段的宽度（以字符计）。
     step	规定输入字段的合法数字间隔。
     value	规定输入字段的默认值。
+##### 其他属性
+      form	规定input元素所属的form元素的id属性。
+
+
 #### （4） 输入类型（type值） [见表单 003-输入类型（type值）.html](html-code/表单/003-输入类型（type值）.html)
 ##### 主要值：
     text    定义一个单行文本输入。
@@ -477,3 +498,115 @@
     cols="cols"。定义文本区的列数。
     rows="rows"。定义文本区的行数。
     disabled="disabled"。假如文本区被禁用，则该属性被设置为 disabled。
+
+### 2.图形
+### 3.媒体 
+#### （1）主要媒体形式
+##### 视频格式
+    AVI	.avi	
+    AVI (Audio Video Interleave) 格式是由微软开发的。所有运行 Windows 的计算机都支持 AVI 格式。它是因特网上很常见的格式，但非 Windows 计算机并不总是能够播放。
+
+    WMV	.wmv	
+    Windows Media 格式是由微软开发的。Windows Media 在因特网上很常见，但是如果未安装额外的（免费）组件，就无法播放 Windows Media 电影。一些后期的 Windows Media 电影在所有非 Windows 计算机上都无法播放，因为没有合适的播放器。
+
+    MPEG .mpg.mpeg 
+    MPEG (Moving Pictures Expert Group) 格式是因特网上最流行的格式。它是跨平台的，得到了所有最流行的浏览器的支持。
+
+    QuickTime	.mov	
+
+    QuickTime 格式是由苹果公司开发的。QuickTime 是因特网上常见的格式，但是 QuickTime 电影不能在没有安装额外的（免费）组件的 Windows 计算机上播放。
+
+    RealVideo    .rm.ram	
+    RealVideo 格式是由 Real Media 针对因特网开发的。该格式允许低带宽条件下（在线视频、网络电视）的视频流。由于是低带宽优先的，质量常会降低。
+
+    Flash .swf .flv
+    Flash (Shockwave) 格式是由 Macromedia 开发的。Shockwave 格式需要额外的组件来播放。但是该组件会预装到 Firefox 或 IE 之类的浏览器上。
+
+    Mpeg-4	.mp4	
+    Mpeg-4 (with H.264 video compression) 是一种针对因特网的新格式。事实上，YouTube 推荐使用 MP4。YouTube 接收多种格式，然后全部转换为 .flv 或 .mp4 以供分发。越来越多的视频发布者转到 MP4，将其作为 Flash 播放器和 HTML5 的因特网共享格式。
+
+##### 声音格式
+    MIDI	.mid.midi
+
+    MIDI (Musical Instrument Digital Interface) 是一种针对电子音乐设备（比如合成器和声卡）的格式。MIDI 文件不含有声音，但包含可被电子产品（比如声卡）播放的数字音乐指令。
+    因为 MIDI 格式仅包含指令，所以 MIDI 文件极其小巧。上面的例子只有 23k 的大小，但却能播放将近 5 分钟。MIDI 得到了广泛的平台上的大量软件的支持。大多数流行的网络浏览器都支持 MIDI。
+
+    RealAudio	.rm .ram
+
+    RealAudio 格式是由 Real Media 针对因特网开发的。该格式也支持视频。该格式允许低带宽条件下的音频流（在线音乐、网络音乐）。由于是低带宽优先的，质量常会降低。
+
+    Wave	.wav	
+    Wave (waveform) 格式是由 IBM 和微软开发的。所有运行 Windows 的计算机和所有网络浏览器（除了 Google Chrome）都支持它。
+
+    WMA	.wma	
+    WMA 格式 (Windows Media Audio)，质量优于 MP3，兼容大多数播放器，除了 iPod。WMA 文件可作为连续的数据流来传输，这使它对于网络电台或在线音乐很实用。
+
+    MP3	 .mp3.mpga
+    MP3 文件实际上是 MPEG 文件的声音部分。MPEG 格式最初是由运动图像专家组开发的。MP3 是其中最受欢迎的针对音乐的声音格式。期待未来的软件系统都支持它。
+#### （2）对象 [见媒体 001-对象.html](html-code/媒体/001-对象.html)
+     object 标签是一种特殊的 HTML 标签，定义 HTML 文档中的嵌入式对象。
+     embed 标签是一种特殊的 HTML 标签，定义了 HTML 文档中的嵌入式对象。
+#### （3）音频 [见媒体 002-音频.html](html-code/媒体/002-音频.html)
+     audio 标签是一种特殊的 HTML 标签，定义 HTML 文档中的音频。
+     embed 标签是一种特殊的 HTML 标签，定义了 HTML 文档中的音频。
+##### 定义音频音频的语句
+    1.使用 embed 元素
+    <embed height="100" width="300" src="https://www.w3school.com.cn/i/horse.mp3" />
+    2.使用 object 元素
+    <object height="100" width="300" data="https://www.w3school.com.cn/i/horse.mp3"></object>
+    3.使用 audio 元素
+    <audio height="100" width="300" src="https://www.w3school.com.cn/i/horse.mp3"></audio>  //不起作用        
+     <audio controls="controls">
+        <source src="https://www.w3school.com.cn/i/horse.mp3" type="audio/mp3" />
+        <source src="song.ogg" type="audio/ogg" />   //两种格式选一
+      Your browser does not support this audio format.
+    </audio> -->
+     4.使用雅虎媒体播放器 
+    <a href="https://www.w3school.com.cn/i/horse.mp3">Play Sound</a>
+    <a href="song1.mp3">Play Song 1</a>
+    <a href="song2.mp3">Play Song 2</a>
+    <script type="text/javascript" src="http://mediaplayer.yahoo.com/js"></script>
+#### （4）视频 [见媒体 003-视频.html](html-code/媒体/003-视频.html)
+##### 定义视频的语句
+    1.使用 embed 标签
+        embed 标签的作用是在 HTML 页面中嵌入多媒体元素。
+        下面的 HTML 代码显示嵌入网页的 Flash 视频：
+        <embed src="movie.swf" height="200" width="200"/>
+    2.使用 object> 标签
+        object标签的作用是在 HTML 页面中嵌入多媒体元素。
+        下面的 HTML 片段显示嵌入网页的一段 Flash 视频：
+        <object data="movie.swf" height="200" width="200"/>
+    3.使用 video 标签
+        video 是 HTML 5 中的新标签。
+        video 标签的作用是在 HTML 页面中嵌入视频元素。
+        以下 HTML 片段会显示一段嵌入网页的 ogg、mp4 或 webm 格式的视频：
+        <video width="320" height="240" controls="controls">
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <source src="movie.webm" type="video/webm" />
+        Your browser does not support the video tag.
+        </video>
+        您必须把视频转换为很多不同的格式。
+        video 元素在老式浏览器中无效。
+        video 元素无法通过 HTML 4 和 XHTML 验证。
+    4.最好的 HTML 解决方法
+        HTML 5 + object + embed
+        <video width="320" height="240" controls="controls">
+          <source src="movie.mp4" type="video/mp4" />
+          <source src="movie.ogg" type="video/ogg" />
+          <source src="movie.webm" type="video/webm" />
+          <object data="movie.mp4" width="320" height="240">
+            <embed src="movie.swf" width="320" height="240" />
+          </object>
+        </video>
+        上例中使用了 4 中不同的视频格式。HTML 5 video 元素会尝试播放以 mp4、ogg 或 webm 格式中的一种来播放视频。如果均失败，则回退到 embed 元素。
+##### video主要属性
+      controls      控件
+      loop          循环播放
+      autoplay     自动播放
+      mute           静音
+
+      
+    
+
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 播放音频 -->
+    <!-- 1.使用 embed 元素
+            embed 标签定义外部（非 HTML）内容的容器。（这是一个 HTML5 标签，在 HTML4 中是非法的，但是所有浏览器中都有效）。   
+            下面的代码片段能够显示嵌入网页中的 MP3 文件： -->
+    <embed height="100" width="300" src="https://www.w3school.com.cn/i/horse.mp3" />
+
+
+    <!-- 2.使用 object 元素
+            object tag 标签也可以定义外部（非 HTML）内容的容器。
+            下面的代码片段能够显示嵌入网页中的 MP3 文件： -->
+
+    <object height="100" width="300" data="https://www.w3school.com.cn/i/horse.mp3"></object>
+    <!--  3.使用 audio 元素
+            audio 标签定义外部（非 HTML）内容的容器。
+            下面的代码片段能够显示嵌入网页中的 MP3 文件： -->
+            不起效果，不知道为什么
+     <!-- <audio height="100" width="300" src="https://www.w3school.com.cn/i/horse.mp3"></audio>  -->
+       
+
+     <audio controls="controls">
+        <source src="https://www.w3school.com.cn/i/horse.mp3" type="audio/mp3" />
+        <source src="song.ogg" type="audio/ogg" />
+      Your browser does not support this audio format.
+    </audio> -->
+    <!-- 4.使用雅虎媒体播放器 -->
+    <a href="https://www.w3school.com.cn/i/horse.mp3">Play Sound</a>
+    <a href="song1.mp3">Play Song 1</a>
+    <a href="song2.mp3">Play Song 2</a>
+    <script type="text/javascript" src="http://mediaplayer.yahoo.com/js">
+</script>
+
+
+<!-- 
+雅虎媒体播放器为您的用户提供的是一个小型的播放按钮，而不是完整的播放器。不过，当您点击该按钮，会弹出完整的播放器。
+
+请注意，这个播放器始终停靠在窗框底部。只需点击它，就可将其滑出。 -->
+
+</body>
+
+</html>
