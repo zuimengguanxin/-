@@ -1,0 +1,66 @@
+<!doctype html>
+
+<head>
+    <meta charset="utf-8" />
+    <style></style>
+</head>
+
+<body>
+    <div>翻译句子</div>
+    <select name="fyq" id="fyq">
+        <option value="auto">自动识别</option>
+        <option value="zh">中文</option>
+        <option value="en">英文</option>
+    </select>
+    <span>译</span>
+    <select name="fyh" id="fyh">
+        <option value="zh">中文</option>
+        <option value="en">英文</option>
+    </select><br>
+    <textarea name="wenbenkuang" id="wenbenkuang" cols="30" rows="10"> 
+    </textarea>
+    <button onclick='tianjia()'>翻译</button>
+    
+    <div id="result"></div>
+    <script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./md5.js"></script>
+
+    <script type="text/javascript">
+        function fanyi(wenben) {
+            //定义信息
+            var appid = '**************';
+            var key = '**************';
+            var salt = (new Date).getTime();
+            var query = wenben;
+            // 多个query可以用\n连接  如 query='apple\norange\nbanana\npear'
+            var from = $('#fyq').val();
+            var to = $('#fyh').val();
+            var str1 = appid + query + salt + key;
+            var sign = MD5(str1);
+            $.ajax({
+                url: 'http://api.fanyi.baidu.com/api/trans/vip/translate',
+                type: 'get',
+                dataType: 'jsonp',
+                data: {
+                    q: query,
+                    appid: appid,
+                    salt: salt,
+                    from: from,
+                    to: to,
+                    sign: sign
+                },
+                success: function (data) {
+                    $('#result').html('翻译结果是：' + data.trans_result[0].dst)
+                }
+            });
+        }
+        //添加方法
+        function tianjia() {
+            var wenben = $('#wenbenkuang').val();
+            fanyi(wenben);
+
+        }
+
+
+    </script>
+</body>

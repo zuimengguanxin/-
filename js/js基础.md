@@ -52,7 +52,7 @@
     提示：把脚本置于 <body> 元素的底部，可改善显示速度，因为脚本编译会拖慢显示。
 
 #### 外部脚本
-##### 外部脚本位置
+##### 位置
     脚本可放置与外部文件中：
     外部文件：myScript.js
     function myFunction() {
@@ -65,6 +65,7 @@
     实例
     <script src="myScript.js"></script>
     注释：外部脚本不能包含 <script> 标签。
+    <script> 标签必须成对出现
 
 ##### 外部 JavaScript 的优势
     在外部文件中放置脚本有如下优势：
@@ -87,7 +88,6 @@
     实例
     <script src="myScript1.js"></script>
  
-    您能够在 HTML 文件路径中学习更多有关文件路径的知识 
 ### 3.JavaScript 输出
     JavaScript 不提供任何内建的打印或显示函数。
 
