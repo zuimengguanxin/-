@@ -1,0 +1,3 @@
+url = git@git.zhlh6.cn:zuimengguanxin/biji.git
+git.zhlh6.cn
+http://hub.fastgit.xyz/
